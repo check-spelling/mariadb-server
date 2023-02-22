@@ -74,7 +74,7 @@ show status like 'Rpl_semi_sync_master_yes_tx';
 
 --echo #
 --echo # BUG#45672 Semisync repl: ActiveTranx:insert_tranx_node: transaction node allocation failed
---echo # BUG#45673 Semisynch reports correct operation even if no slave is connected
+--echo # BUG#45673 Semisync reports correct operation even if no slave is connected
 --echo #
 
 # BUG#45672 When semi-sync is enabled on master, it would allocate
