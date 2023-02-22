@@ -5,7 +5,7 @@
 # bug #28960    non-trans temp table changes with insert .. select
 #               not binlogged after rollback
 #
-# testing appearence of insert into temp_table in binlog.
+# testing appearance of insert into temp_table in binlog.
 # There are two branches of execution that require different setup.
 
 # checking binlog content filled with row-based events due to
