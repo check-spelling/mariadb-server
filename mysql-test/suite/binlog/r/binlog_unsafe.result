@@ -38,7 +38,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. Statement is unsafe because it uses a system function that may return a different value on the slave
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT func_retval_1();
 
 Invoking function func_retval_2 returning value from function func_retval_1 returning value from unsafe UUID() function.
@@ -49,7 +49,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. Statement is unsafe because it uses a system function that may return a different value on the slave
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT func_retval_2();
 DROP FUNCTION func_retval_2;
 
@@ -91,7 +91,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. Statement is unsafe because it uses a system function that may return a different value on the slave
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT * FROM view_retval_2;
 DROP VIEW view_retval_2;
 
@@ -274,7 +274,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. Statement is unsafe because it uses a system function that may return a different value on the slave
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT * FROM view_retval_1;
 
 Invoking function func_sidef_2 invoking view view_retval_1 returning value from unsafe UUID() function.
@@ -315,7 +315,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. Statement is unsafe because it uses a system function that may return a different value on the slave
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT * FROM view_retval_2;
 DROP VIEW view_retval_2;
 
@@ -347,7 +347,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. Statement is unsafe because it uses a system function that may return a different value on the slave
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT UUID();
 
 ==== Testing @@hostname unsafeness ====
@@ -360,7 +360,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. Statement is unsafe because it uses a system variable that may have a different value on the slave
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT func_retval_1();
 
 Invoking function func_retval_2 returning value from function func_retval_1 returning value from unsafe @@hostname variable.
@@ -371,7 +371,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. Statement is unsafe because it uses a system variable that may have a different value on the slave
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT func_retval_2();
 DROP FUNCTION func_retval_2;
 
@@ -413,7 +413,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. Statement is unsafe because it uses a system variable that may have a different value on the slave
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT * FROM view_retval_2;
 DROP VIEW view_retval_2;
 
@@ -776,7 +776,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. The statement is unsafe because it uses a LIMIT clause. This is unsafe because the set of rows included cannot be predicted
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT * FROM view_retval_1;
 
 Invoking function func_sidef_2 invoking view view_retval_1 returning value from unsafe SELECT...LIMIT statement.
@@ -817,7 +817,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. The statement is unsafe because it uses a LIMIT clause. This is unsafe because the set of rows included cannot be predicted
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT * FROM view_retval_2;
 DROP VIEW view_retval_2;
 
@@ -849,7 +849,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. The statement is unsafe because it uses a LIMIT clause. This is unsafe because the set of rows included cannot be predicted
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT * FROM data_table LIMIT 1;
 
 ==== Testing INSERT DELAYED safeness after BUG#54579 is fixed ====
@@ -1186,7 +1186,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. Statement is unsafe because it uses a UDF which may not return the same value on the slave
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT func_retval_1();
 
 Invoking function func_retval_2 returning value from function func_retval_1 returning value from unsafe UDF.
@@ -1197,7 +1197,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. Statement is unsafe because it uses a UDF which may not return the same value on the slave
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT func_retval_2();
 DROP FUNCTION func_retval_2;
 
@@ -1239,7 +1239,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. Statement is unsafe because it uses a UDF which may not return the same value on the slave
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT * FROM view_retval_2;
 DROP VIEW view_retval_2;
 
@@ -1662,7 +1662,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. The statement is unsafe because it uses the general log, slow query log, or performance_schema table(s). This is unsafe because system tables may differ on slaves
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT * FROM view_retval_1;
 
 Invoking function func_sidef_2 invoking view view_retval_1 returning value from unsafe use of mysql.general_log.
@@ -1703,7 +1703,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. The statement is unsafe because it uses the general log, slow query log, or performance_schema table(s). This is unsafe because system tables may differ on slaves
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT * FROM view_retval_2;
 DROP VIEW view_retval_2;
 
@@ -1735,7 +1735,7 @@ Warnings:
 Note	1592	Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. The statement is unsafe because it uses the general log, slow query log, or performance_schema table(s). This is unsafe because system tables may differ on slaves
 * SQL_LOG_BIN = 0: expect nothing logged and no warning.
 * binlog_format = MIXED: expect row events in binlog and no warning.
-* Invoke statement so that return value is dicarded: expect no warning.
+* Invoke statement so that return value is discarded: expect no warning.
 SELECT COUNT(*) FROM mysql.general_log;
 
 ==== Testing a statement that is unsafe in many ways ====

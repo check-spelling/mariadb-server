@@ -377,7 +377,7 @@ if ($CRC_RET_stmt_sidef) {
 # Invoke created object, discarding the return value. This should not
 # give any warning.
 if ($CRC_RET_sel_retval) {
-  --echo * Invoke statement so that return value is dicarded: expect no warning.
+  --echo * Invoke statement so that return value is discarded: expect no warning.
   --disable_result_log
   --eval $CRC_RET_sel_retval
   --enable_result_log
