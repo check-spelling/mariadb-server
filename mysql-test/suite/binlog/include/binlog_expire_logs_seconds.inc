@@ -10,8 +10,8 @@
 # 2. Rotation of logs because of binlog growing bigger than max_binlog_size
 # 3. Server restart
 #
-# Usuage: --let $binlog_expire_logs_seconds=
-#         --let $expire_logs_days=
+# Usage: --let $binlog_expire_logs_seconds=
+#        --let $expire_logs_days=
 #
 # --source suite/binlog/include/binlog_expire_logs_seconds.inc
 
