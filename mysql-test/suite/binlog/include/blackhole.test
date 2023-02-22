@@ -187,7 +187,7 @@ drop table if exists t1;
 #
 #
 # the test checks that explicitly prescribed with set insert_id= value
-# preceeds the following autoincrement insert in a blachhole
+# precedes the following autoincrement insert in a blachhole
 #
 
 reset master;
