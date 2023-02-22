@@ -6,7 +6,7 @@
 
 RESET MASTER;
 
-# MDEV-27365 CREATE-or-REPLACE SEQUENCE bilogged without DDL flag
+# MDEV-27365 CREATE-or-REPLACE SEQUENCE binlogged without DDL flag
 # Prove it is logged with the DDL flag.
 CREATE OR REPLACE SEQUENCE s1;
 
