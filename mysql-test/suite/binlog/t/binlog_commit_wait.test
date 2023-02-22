@@ -189,7 +189,7 @@ SELECT variable_value - @group_commit_trigger_timeout FROM information_schema.gl
 SELECT variable_value - @group_commit_trigger_lock_wait FROM information_schema.global_status
  WHERE variable_name = 'binlog_group_commit_trigger_lock_wait';
 
-# Test that when the binlog_commit_wait_usec is reached the tranction gets a group commit
+# Test that when the binlog_commit_wait_usec is reached the transaction gets a group commit
 
 --connection default
 SET @a= current_timestamp();
