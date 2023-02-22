@@ -50,7 +50,7 @@ use my_replicated_db;
 
 # Note:
 # The queries used here do not make any sense (no semantic).
-# What this test is interrested in, is check the behavior
+# What this test is interested in, is check the behavior
 # when replicating queries that mix both:
 # - non replicated tables
 # - replicated tables
