@@ -1613,7 +1613,7 @@ static struct my_option my_options[] =
   {"gtid-strict-mode", 0, "Process binlog according to gtid-strict-mode "
    "specification. The start, stop positions are verified to satisfy  "
    "start < stop comparison condition. Sequence numbers of any gtid domain "
-   "must comprise monotically growing sequence",
+   "must comprise monotonically growing sequence",
    &opt_gtid_strict_mode, &opt_gtid_strict_mode, 0,
    GET_BOOL, NO_ARG, 1, 0, 0, 0, 0, 0},
   {"stop-datetime", OPT_STOP_DATETIME,
