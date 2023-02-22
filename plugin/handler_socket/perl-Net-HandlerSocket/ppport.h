@@ -1523,7 +1523,7 @@ magic_clearpack|||
 magic_clearsig|||
 magic_dump||5.006000|
 magic_existspack|||
-magic_freearylen_p|||
+magic_freearlylen_p|||
 magic_freeovrld|||
 magic_freeregexp|||
 magic_getarylen|||
