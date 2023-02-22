@@ -101,7 +101,7 @@ eval USE $old_db;
 --echo # Bug#46265: Can not disable warning about unsafe statements for binary logging
 --echo #
 
-let BINLOG_COUNTER1= `select CONVERT(NOW(),UNSIGNED) as timestmap from dual`;
+let BINLOG_COUNTER1= `select CONVERT(NOW(),UNSIGNED) as timestamp from dual`;
 
 SET @old_log_warnings = @@log_warnings;
 
