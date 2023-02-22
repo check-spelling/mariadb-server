@@ -1455,7 +1455,7 @@ update_line (old, new, current_line, omax, nmax, inv_botlin)
     }
 
   /* When this function returns, _rl_last_c_pos is correct, and an absolute
-     cursor postion in multibyte mode, but a buffer index when not in a
+     cursor position in multibyte mode, but a buffer index when not in a
      multibyte locale. */
   _rl_move_cursor_relative (od, old);
 #if 1

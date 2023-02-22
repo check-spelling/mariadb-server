@@ -20,9 +20,9 @@
 
 
 /*
-  Read row based on postion
+  Read row based on position
 
-  @param inx      If inx >= 0 postion the given index on found row
+  @param inx      If inx >= 0 position the given index on found row
 
   @return
   @retval  0                    Ok

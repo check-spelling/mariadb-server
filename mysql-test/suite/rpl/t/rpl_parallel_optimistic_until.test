@@ -41,7 +41,7 @@ SET GLOBAL slave_parallel_mode='optimistic';
 #    below $pos_trx0 of the last exec position in the first file
 # 2. and above $pos_trx0
 #    In either case trx2 must commit before slave stops.
-# 3. the until postion is inside trx1
+# 3. the until position is inside trx1
 # 4. RELAY log until inside trx1
 # 5. RELAY log until inside a "big" trx
 # 6. RELAY log until inside a trx within a sequence of relay logs

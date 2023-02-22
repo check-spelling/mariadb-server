@@ -581,7 +581,7 @@ void _ma_end_block_record(MARIA_HA *info)
 ****************************************************************************/
 
 /*
-  Return the next unused postion on the page after a directory entry.
+  Return the next unused position on the page after a directory entry.
 
   SYNOPSIS
     start_of_next_entry()
