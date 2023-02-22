@@ -75,7 +75,7 @@ DROP FUNCTION f1;
 RESET MASTER;
 
 --echo ##########################################################################
---echo #      Test verifies Gtid_log_event/Xid_log_event/Qery_log_event         #
+--echo #      Test verifies Gtid_log_event/Xid_log_event/Query_log_event         #
 --echo #      specific print along with flashback option                        #
 --echo ##########################################################################
 CREATE TABLE tm(f INT) ENGINE=MYISAM;

@@ -51,7 +51,7 @@ DROP PROCEDURE simpleproc;
 DROP FUNCTION f1;
 RESET MASTER;
 ##########################################################################
-#      Test verifies Gtid_log_event/Xid_log_event/Qery_log_event         #
+#      Test verifies Gtid_log_event/Xid_log_event/Query_log_event         #
 #      specific print along with flashback option                        #
 ##########################################################################
 CREATE TABLE tm(f INT) ENGINE=MYISAM;
