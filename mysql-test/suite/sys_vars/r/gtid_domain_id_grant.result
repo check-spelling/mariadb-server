@@ -1,5 +1,5 @@
 #
-# MDEV-21975 Add BINLOG REPLAY privilege and bind new privileges to gtid_seq_no, preudo_thread_id, server_id, gtid_domain_id
+# MDEV-21975 Add BINLOG REPLAY privilege and bind new privileges to gtid_seq_no, pseudo_thread_id, server_id, gtid_domain_id
 #
 SET @global=@@global.gtid_domain_id;
 # Test that "SET GLOBAL gtid_domain_id" is not allowed without REPLICATION MASTER ADMIN

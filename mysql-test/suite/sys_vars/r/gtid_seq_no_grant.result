@@ -1,5 +1,5 @@
 #
-# MDEV-21975 Add BINLOG REPLAY privilege and bind new privileges to gtid_seq_no, preudo_thread_id, server_id, gtid_domain_id
+# MDEV-21975 Add BINLOG REPLAY privilege and bind new privileges to gtid_seq_no, pseudo_thread_id, server_id, gtid_domain_id
 #
 SET @session=@@session.gtid_seq_no;
 # Test that "SET gtid_seq_no" is not allowed without BINLOG REPLAY

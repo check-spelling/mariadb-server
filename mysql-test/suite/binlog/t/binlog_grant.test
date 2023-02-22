@@ -160,7 +160,7 @@ DROP USER user1@localhost;
 
 --echo #
 --echo # MDEV-21975 Add BINLOG REPLAY privilege and bind new privileges to
---echo #             gtid_seq_no, preudo_thread_id, server_id, gtid_domain_id
+--echo #             gtid_seq_no, pseudo_thread_id, server_id, gtid_domain_id
 --echo #
 --echo # Test combinations of BINLOG REPLAY guarded features which typically
 --echo # arise in mysqlbinlog output replay on server.
