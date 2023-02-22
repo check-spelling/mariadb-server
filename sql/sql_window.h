@@ -240,7 +240,7 @@ class Explain_aggr_window_funcs;
   This is a "window function computation phase": a single object of this class
   takes care of computing all window functions in a SELECT.
 
-  - JOIN optimizer is exected to call setup() during query optimization.
+  - JOIN optimizer is executed to call setup() during query optimization.
   - JOIN::exec() should call exec() once it has collected join output in a
     temporary table.
 */
