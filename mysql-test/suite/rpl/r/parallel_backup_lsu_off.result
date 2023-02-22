@@ -1,6 +1,6 @@
 # Specialized --log-slave-updates = 0 version of parallel_backup test.
 # MDEV-21953: deadlock between BACKUP STAGE BLOCK_COMMIT and parallel
-# MDEV-30423: dealock XA COMMIT vs BACKUP
+# MDEV-30423: deadlock XA COMMIT vs BACKUP
 include/master-slave.inc
 [connection master]
 #
@@ -36,7 +36,7 @@ connection backup_slave;
 BACKUP STAGE END;
 connection slave;
 include/diff_tables.inc [master:t1,slave:t1]
-# MDEV-30423: dealock XA COMMIT vs BACKUP
+# MDEV-30423: deadlock XA COMMIT vs BACKUP
 #
 # Normal XA COMMIT
 connection slave;
