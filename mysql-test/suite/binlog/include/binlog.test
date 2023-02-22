@@ -218,7 +218,7 @@ set insert_id=128;
 --error HA_ERR_AUTOINC_ERANGE
 insert into t1 values(null) /* Not binlogged */;
 
-# The followin insert ignore will be put in binlog
+# The following insert ignore will be put in binlog
 set insert_id=128;
 insert ignore into t1 values(null) /* Insert 128 */;
 
@@ -240,7 +240,7 @@ set insert_id=128;
 --error HA_ERR_AUTOINC_ERANGE
 insert into t1 values(5),(null) /* Insert_id 128 */;
 
-# The followin insert ignore will be put in binlog
+# The following insert ignore will be put in binlog
 set insert_id=128;
 insert ignore into t1 values (4),(null) /* Insert_id 128 */;
 

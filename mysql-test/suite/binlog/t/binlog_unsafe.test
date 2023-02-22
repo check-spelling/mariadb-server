@@ -683,7 +683,7 @@ DELETE FROM t1;
 
 # Since we replicate the TIMESTAMP variable, functions affected by the
 # TIMESTAMP variable are safe to replicate.  So we check that the
-# following following functions that depend on the TIMESTAMP variable
+# following functions that depend on the TIMESTAMP variable
 # are not unsafe and don't generate a warning.
 
 SET TIME_ZONE= '+03:00';
