@@ -214,7 +214,7 @@ Fri Dec  2 03:29:21 1988  Monty  (monty at monty)
 Wed Nov  9 00:32:33 1988  Monty  (monty at monty)
 
 	* Changed realloc for MSDOS; Previous version freed old block on
-	* error, new version (of compiler) dosn't.
+	* error, new version (of compiler) doesn't.
 
 Wed Oct 26 21:07:27 1988  Monty  (monty at monty)
 

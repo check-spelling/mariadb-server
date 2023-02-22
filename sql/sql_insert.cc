@@ -3442,7 +3442,7 @@ pthread_handler_t handle_delayed_insert(void *arg)
     /*
       Protect against mdl_locks trying to access open tables
       We use KILL_CONNECTION_HARD here to ensure that
-      THD::notify_shared_lock() dosn't try to access open tables after
+      THD::notify_shared_lock() doesn't try to access open tables after
       this.
     */
     mysql_mutex_lock(&thd->LOCK_thd_data);
