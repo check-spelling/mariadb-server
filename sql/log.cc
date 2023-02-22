@@ -3691,7 +3691,7 @@ bool MYSQL_BIN_LOG::open_index_file(const char *index_file_name_arg,
                      mysql_file_seek(index_file_nr, 0L, MY_SEEK_END, MYF(0)),
                                      0, MYF(MY_WME | MY_WAIT_IF_FULL),
                                      m_key_file_log_index_cache) ||
-      DBUG_IF("fault_injection_openning_index"))
+      DBUG_IF("fault_injection_opening_index"))
   {
     /*
       TODO: all operations creating/deleting the index file or a log, should

@@ -193,7 +193,7 @@ DROP TABLE t5;
 flush tables;
 ###################### TEST #11
 include/rpl_restart_server.inc [server_number=1]
-SET @@global.debug_dbug="d,fault_injection_openning_index";
+SET @@global.debug_dbug="d,fault_injection_opening_index";
 FLUSH LOGS;
 ERROR HY000: Can't open file: 'master-bin.index' (errno: 1 "Operation not permitted")
 SET @@global.debug_dbug=@old_debug;
@@ -270,7 +270,7 @@ include/rpl_restart_server.inc [server_number=2]
 ###################### TEST #16
 SET @saved_debug=@@global.debug_dbug;
 include/stop_slave.inc
-SET @@global.debug_dbug="d,fault_injection_openning_index";
+SET @@global.debug_dbug="d,fault_injection_opening_index";
 START SLAVE io_thread;
 include/wait_for_slave_io_error.inc [errno=1595]
 Last_IO_Error = 'Relay log write failure: could not queue event from master'

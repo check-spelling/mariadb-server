@@ -354,7 +354,7 @@ int cut_fields_for_portion_of_time(THD *thd, TABLE *table,
 
   RETURN
     0  - OK
-    2  - privilege check and openning table passed, but we need to convert to
+    2  - privilege check and opening table passed, but we need to convert to
          multi-update because of view substitution
     1  - error
 */

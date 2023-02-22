@@ -321,8 +321,8 @@ flush tables;
 --let $rpl_server_number= 1
 --source include/rpl_restart_server.inc
 
-# +d,fault_injection_openning_index => injects fault on MYSQL_BIN_LOG::open_index_file
-SET @@global.debug_dbug="d,fault_injection_openning_index";
+# +d,fault_injection_opening_index => injects fault on MYSQL_BIN_LOG::open_index_file
+SET @@global.debug_dbug="d,fault_injection_opening_index";
 -- replace_regex /\.[\\\/]master/master/
 -- error ER_CANT_OPEN_FILE
 FLUSH LOGS;
@@ -428,7 +428,7 @@ call mtr.add_suppression("Can't generate a unique log-filename .*");
 -- echo ###################### TEST #16
 
 #### ASSERTION: check against relay log index open failure
--- let $io_thd_injection_fault_flag= fault_injection_openning_index
+-- let $io_thd_injection_fault_flag= fault_injection_opening_index
 -- let $slave_io_errno= 1595
 -- let $show_slave_io_error= 1
 -- source include/io_thd_fault_injection.inc
