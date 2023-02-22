@@ -79,7 +79,7 @@ SELECT * from t1;
 #    connection
 ######################################################################
 
---echo ## Verifying behavior of variable by commiting rows in test_con1 ##
+--echo ## Verifying behavior of variable by committing rows in test_con1 ##
 CONNECTION test_con1;
 SELECT * from t1;
 COMMIT;

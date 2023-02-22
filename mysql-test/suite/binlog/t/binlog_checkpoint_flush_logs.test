@@ -8,7 +8,7 @@
 # MDEV-24526 binlog rotate via FLUSH LOGS may obsolate binlog file too eary
 #
 # The test for MDEV-24526 proves the fixes correct observed race condition
-# between a commiting transaction and FLUSH-LOGS.
+# between a committing transaction and FLUSH-LOGS.
 # The plot.
 # Trx_1 (con1) transaction binlogs first
 # to yield its turn acquiring LOCK_commit_ordered to Trx_2 and stand

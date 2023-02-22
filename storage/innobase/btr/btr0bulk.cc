@@ -834,7 +834,7 @@ PageBulk::storeExt(
 	return(err);
 }
 
-/** Release block by commiting mtr
+/** Release block by committing mtr
 Note: log_free_check requires holding no lock/latch in current thread. */
 void
 PageBulk::release()

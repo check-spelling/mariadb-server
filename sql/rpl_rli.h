@@ -190,7 +190,7 @@ public:
     Let's call a group (of events) :
       - a transaction
       or
-      - an autocommiting query + its associated events (INSERT_ID,
+      - an autocommitting query + its associated events (INSERT_ID,
     TIMESTAMP...)
     We need these rli coordinates :
     - relay log name and position of the beginning of the group we currently
@@ -200,7 +200,7 @@ public:
     executed. This event is part of the current group.
     Formerly we only had the immediately above coordinates, plus a 'pending'
     variable, but this dealt wrong with the case of a transaction starting on a
-    relay log and finishing (commiting) on another relay log. Case which can
+    relay log and finishing (committing) on another relay log. Case which can
     happen when, for example, the relay log gets rotated because of
     max_binlog_size.
 

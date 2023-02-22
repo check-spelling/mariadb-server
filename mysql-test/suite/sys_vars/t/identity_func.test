@@ -122,10 +122,10 @@ COMMIT;
 SELECT * from t1;
 SELECT * from t2;
 
---echo ## Verifying total values in t1 after commiting data ## 
+--echo ## Verifying total values in t1 after committing data ## 
 SELECT @@identity from t1;
 
---echo ## Verifying total values in t2 after commiting data ## 
+--echo ## Verifying total values in t2 after committing data ## 
 SELECT @@identity from t2;
 
 INSERT into t1(name) values('Record_4');

@@ -30,7 +30,7 @@ connection test_con2;
 SELECT * from t1;
 id	name
 '#--------------------FN_DYNVARS_003_03-------------------------#'
-## Verifying behavior of variable by commiting rows in test_con1 ##
+## Verifying behavior of variable by committing rows in test_con1 ##
 connection test_con1;
 SELECT * from t1;
 id	name

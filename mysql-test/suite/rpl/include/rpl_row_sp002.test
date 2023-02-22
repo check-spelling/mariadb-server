@@ -8,7 +8,7 @@
 #        should cause a delete cascade.                                     #
 #       The second test has a sp that will either insert rows or delete from#
 #        the table depending on the CASE outcome. The test uses this SP in a#
-#        transaction first rolling back and then commiting,                 #
+#        transaction first rolling back and then committing,                 #
 #############################################################################
 
 

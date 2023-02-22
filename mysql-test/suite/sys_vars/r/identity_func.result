@@ -90,7 +90,7 @@ id	name
 100	MDEV-515
 101	Record_1
 102	Record_1_3
-## Verifying total values in t1 after commiting data ## 
+## Verifying total values in t1 after committing data ## 
 SELECT @@identity from t1;
 @@identity
 101
@@ -99,7 +99,7 @@ SELECT @@identity from t1;
 101
 101
 101
-## Verifying total values in t2 after commiting data ## 
+## Verifying total values in t2 after committing data ## 
 SELECT @@identity from t2;
 @@identity
 101

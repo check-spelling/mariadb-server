@@ -4279,7 +4279,7 @@ bool select_insert::prepare_eof()
               thd->transaction->stmt.modified_non_trans_table);
 
   /*
-    Write to binlog before commiting transaction.  No statement will
+    Write to binlog before committing transaction.  No statement will
     be written by the binlog_query() below in RBR mode.  All the
     events are in the transaction cache and will be written when
     ha_autocommit_or_rollback() is issued below.
