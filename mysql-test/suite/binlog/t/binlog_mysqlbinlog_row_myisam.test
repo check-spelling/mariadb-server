@@ -6,7 +6,7 @@
 # Main module for the MyISAM storage engine.
 #
 # Calls include/mysqlbinlog_row.inc
-# See there for more informaton.
+# See there for more information.
 #
 
 #--source include/have_myisam.inc
