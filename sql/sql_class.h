@@ -7270,7 +7270,7 @@ public:
 */
 #define CF_IMPLICIT_COMMIT_END    (1U << 7)
 /**
-  CF_IMPLICT_COMMIT_BEGIN and CF_IMPLICIT_COMMIT_END are used
+  CF_IMPLICIT_COMMIT_BEGIN and CF_IMPLICIT_COMMIT_END are used
   to ensure that the active transaction is implicitly committed
   before and after every DDL statement and any statement that
   modifies our currently non-transactional system tables.
