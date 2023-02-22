@@ -14,7 +14,7 @@
 # that the master's most recent event exists in the local file.
 #
 # References:
-#   MDEV-14608: mysqlbinlog lastest backupfile size is 0
+#   MDEV-14608: mysqlbinlog latest backupfile size is 0
 #
 
 --source include/linux.inc
