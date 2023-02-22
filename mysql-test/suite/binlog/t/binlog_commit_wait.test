@@ -147,7 +147,7 @@ SELECT IF(@b < 20, "Ok", CONCAT("Error: too much time elapsed: ", @b, " seconds 
 
 # All connections are to the same server. con2 and con3 updates are acquiring
 # the same row lock for a=1. Either con2 or con3 will be in a lock wait
-# thefore the binlog_group_commit_trigger_lock_wait is incremented.
+# therefore the binlog_group_commit_trigger_lock_wait is incremented.
 # before: binlog_group_commit=2, binlog_group_commit_trigger_count=1
 # before: binlog_group_commit_trigger_timeout=0, binlog_group_commit_trigger_lock_wait=1
 # after:  binlog_group_commit+1 by reason of binlog_group_commit_trigger_lock_wait+1
