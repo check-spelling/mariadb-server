@@ -18,7 +18,7 @@ RESET MASTER TO 2147483648;
 ERROR HY000: Can't generate a unique log-filename master-bin.(1-999)
 
 FOUND 1 /Turning logging off for the whole duration of the MariaDB server process/ in mysqld.1.err
-"Following CREATE DATABSE db2 command will not be present in binary log"
+"Following CREATE DATABASE db2 command will not be present in binary log"
 "as binary log got closed due to ER_NO_UNIQUE_LOGFILE error."
 CREATE DATABASE db2;
 "RESET MASTER command fails to generate a new binary log"

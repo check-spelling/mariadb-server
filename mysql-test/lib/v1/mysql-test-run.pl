@@ -2411,7 +2411,7 @@ sub mysql_install_db () {
     copy_install_db('master', $master->[1]->{'path_myddir'});
   }
 
-  # Install the number of slave databses needed
+  # Install the number of slave databases needed
   for (my $idx= 0; $idx < $max_slave_num; $idx++)
   {
     copy_install_db("slave".($idx+1), $slave->[$idx]->{'path_myddir'});

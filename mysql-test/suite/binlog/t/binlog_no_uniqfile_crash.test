@@ -16,7 +16,7 @@
 #    4 - Execute CREATE DATABASE db2 statement and verify server dosn't crash.
 #    5 - Execute SHOW BINARY LOG command and verify that it reports
 #        ER_NO_BINARY_LOGGING error.
-#    6 - Restart the server and verify that databse 'db2' exists and it it not
+#    6 - Restart the server and verify that database 'db2' exists and it it not
 #        present in the binary log.
 #
 # ==== References ====
@@ -60,7 +60,7 @@ RESET MASTER TO 2147483648;
 --let SEARCH_PATTERN=Turning logging off for the whole duration of the MariaDB server process
 --source include/search_pattern_in_file.inc
 
---echo "Following CREATE DATABSE db2 command will not be present in binary log"
+--echo "Following CREATE DATABASE db2 command will not be present in binary log"
 --echo "as binary log got closed due to ER_NO_UNIQUE_LOGFILE error."
 CREATE DATABASE db2;
 
