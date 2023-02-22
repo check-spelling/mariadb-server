@@ -175,7 +175,7 @@ SET @@session.time_zone = default;
 --source include/stop_slave.inc
 
 # Bug#41719 delayed INSERT into timestamp col needs set time_zone for concurrent binlogging
-# To test that time_zone is correctly binloging for 'insert delayed' statement
+# To test that time_zone is correctly binlogging for 'insert delayed' statement
 # Insert 2 values into timestamp col with different time_zone. Check result.
 
 --connection master

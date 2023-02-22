@@ -1479,7 +1479,7 @@ log:
       my_error(ER_OUT_OF_RESOURCES, MYF(0));
       goto done;
     }
-    /* restore sql_mode when binloging */
+    /* restore sql_mode when binlogging */
     thd->variables.sql_mode= org_sql_mode;
     /* Such a statement can always go directly to binlog, no trans cache */
     if (thd->binlog_query(THD::STMT_QUERY_TYPE,
