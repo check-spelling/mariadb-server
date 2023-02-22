@@ -1343,7 +1343,7 @@ static
 ulint
 row_fts_sel_tree_propagate(
 /*=======================*/
-	ulint		propogated,	/*<! in: tree node propagated */
+	ulint		propagated,	/*<! in: tree node propagated */
 	int*		sel_tree,	/*<! in: selection tree */
 	const mrec_t**	mrec,		/*<! in: sort record */
 	rec_offs**	offsets,	/*<! in: record offsets */
@@ -1355,7 +1355,7 @@ row_fts_sel_tree_propagate(
 	int	selected;
 
 	/* Find which parent this value will be propagated to */
-	parent = (propogated - 1) / 2;
+	parent = (propagated - 1) / 2;
 
 	/* Find out which value is smaller, and to propagate */
 	child_left = sel_tree[parent * 2 + 1];

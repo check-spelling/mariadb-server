@@ -21,16 +21,16 @@
 #           set: both shall use their default values (days=0, seconds=0)
 #
 #     R2.2. Exactly one of expire-logs-days or binlog-expire-logs-seconds
-#           is set: that value is propogated to other variable.
+#           is set: that value is propagated to other variable.
 #
 #     R2.3. Both expire-logs-days or binlog-expire-logs-seconds are
 #           set, and at least one of them is set to zero: the last set value
-#           should be effective and its value will be propogated to other
+#           should be effective and its value will be propagated to other
 #           variable.
 #
 #     R2.4. Both expire-logs-days and binlog-expire-logs-seconds are
 #           set, and both are non-zero: the last set value
-#           should be effective and its value will be propogated to other
+#           should be effective and its value will be propagated to other
 #           variable.
 #
 # ==== Implementation ====

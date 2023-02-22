@@ -242,7 +242,7 @@ Propagate a newly added record up one level in the selection tree
 int
 row_merge_fts_sel_propagate(
 /*========================*/
-	int		propogated,	/*<! in: tree node propagated */
+	int		propagated,	/*<! in: tree node propagated */
 	int*		sel_tree,	/*<! in: selection tree */
 	ulint		level,		/*<! in: selection tree level */
 	const mrec_t**	 mrec,		/*<! in: sort record */
