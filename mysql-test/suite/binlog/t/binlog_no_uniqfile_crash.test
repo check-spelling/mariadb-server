@@ -33,7 +33,7 @@ call mtr.add_suppression("MYSQL_BIN_LOG::open failed to generate new file name."
 call mtr.add_suppression("Could not use master-bin for logging");
 
 
---echo "Test case verifies creation of binary log with max entension value."
+--echo "Test case verifies creation of binary log with max extension value."
 RESET MASTER TO 2147483647;
 --source include/show_binary_logs.inc
 
