@@ -22,7 +22,7 @@ SELECT COUNT(*) = 1 FROM t1 WHERE f1 = 2;
 DROP TABLE t1;
 
 --echo #
---echo # MDEV-11149: wsrep_replicate_mysaim: DML fails when binlog checksum
+--echo # MDEV-11149: wsrep_replicate_myisam: DML fails when binlog checksum
 --echo # enabled
 --echo #
 
