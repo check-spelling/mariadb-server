@@ -5,7 +5,7 @@
 
 # References:
 #
-# MDEV-24526 binlog rotate via FLUSH LOGS may obsolate binlog file too early
+# MDEV-24526 binlog rotate via FLUSH LOGS may obsolete binlog file too early
 #
 # The test for MDEV-24526 proves the fixes correct observed race condition
 # between a committing transaction and FLUSH-LOGS.
