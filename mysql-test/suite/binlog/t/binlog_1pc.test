@@ -1,7 +1,7 @@
 # The test file contains tests specific to one phase commit
 # execution and binlogging.
 #
-# MDEV-26031 unnessary xid logging in one phase commit case
+# MDEV-26031 unnecessary xid logging in one phase commit case
 #
 --source include/have_innodb.inc
 --source include/have_aria.inc
