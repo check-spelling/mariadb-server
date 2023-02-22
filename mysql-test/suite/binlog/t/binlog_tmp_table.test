@@ -121,7 +121,7 @@ create temporary table t1(i int);
 # action: at this point, the last event binlogged contains the
 #         pseudo_thread_id from con2. So now we switch to con1, issue
 #         a statement that fails and close the connection (which logs
-#         implicitely a DROP TEMPORARY TABLE).  
+#         implicitly a DROP TEMPORARY TABLE).  
 #
 #         Before the patch this would not log con1's pseudo_thread_id
 #         because the failing statement would reset THD context

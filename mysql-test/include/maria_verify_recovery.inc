@@ -29,7 +29,7 @@ system echo wait-maria_verify_recovery.inc >> $MYSQLTEST_VARDIR/tmp/mysqld.1.exp
 # flush page cache and log, only log, or nothing, and kill mysqld with
 # abort().
 # When we restore an old snapshot, we could just kill mysqld nicely,
-# but that would implicitely commit all work, which the tester may
+# but that would implicitly commit all work, which the tester may
 # not want (tester may want to observe rollback happening).
 
 eval SET SESSION debug_dbug=$mvr_debug_option;

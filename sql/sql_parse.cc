@@ -5060,7 +5060,7 @@ mysql_execute_command(THD *thd, bool is_called_from_prepared_stmt)
   case SQLCOM_UNLOCK_TABLES:
     /*
       It is critical for mysqldump --single-transaction --master-data that
-      UNLOCK TABLES does not implicitely commit a connection which has only
+      UNLOCK TABLES does not implicitly commit a connection which has only
       done FLUSH TABLES WITH READ LOCK + BEGIN. If this assumption becomes
       false, mysqldump will not work.
     */
