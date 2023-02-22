@@ -40,7 +40,7 @@
 # - log-bin: on, off
 # - expire-logs-days: not set, set to 0, set to nonzero
 # - binlog-expire-logs-seconds: not set, set to 0, set to nonzero
-# - Verify option value propogation, by varying the order, in which options
+# - Verify option value propagation, by varying the order, in which options
 #   are set
 #      --expire_logs_days --binlog_expire_logs_seconds
 #      --binlog_expire_logs_seconds --expire_logs_days
