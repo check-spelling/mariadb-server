@@ -47,7 +47,7 @@ if (`SELECT @@global.log_bin`)
   RESET MASTER;
 }
 
-# Disconected and follower threads need synchronization
+# Disconnected and follower threads need synchronization
 CREATE VIEW v_processlist  as SELECT * FROM performance_schema.threads where type = 'FOREGROUND';
 
 --eval call mtr.add_suppression("Found $prepared_at_server_restart prepared XA transactions")

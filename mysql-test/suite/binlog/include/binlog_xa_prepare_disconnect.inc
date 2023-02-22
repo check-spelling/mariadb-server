@@ -3,7 +3,7 @@
 # kill. It is included by binlog_xa_prepared_do_and_restart.
 #
 # param $type              type of transaction
-# param $terminate_with    how to conclude actively disconnecte:
+# param $terminate_with    how to conclude actively disconnected:
 #                          XA COMMIT or XA ROLLBACK
 # param $conn3_id          connection id of the being killed.
 # param $num_trx_prepared  number of transactions prepared so far
