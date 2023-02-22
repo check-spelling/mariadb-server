@@ -51,7 +51,7 @@ set autocommit=0;
 set @@innodb_table_locks=0;
 # The following statement should block because SQL-level lock
 # is taken on t1 which will wait until concurrent transaction
-# is commited.
+# is committed.
 # Sending:
 lock table t1 write;;
 connection con1;
@@ -75,7 +75,7 @@ id	x
 connection con2;
 # The following statement should block because SQL-level lock
 # is taken on t1 which will wait until concurrent transaction
-# is commited.
+# is committed.
 # Sending:
 lock table t1 read;;
 connection con1;

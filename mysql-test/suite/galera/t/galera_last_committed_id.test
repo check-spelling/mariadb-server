@@ -55,7 +55,7 @@ INSERT INTO t1 VALUES (1);
 --eval SELECT WSREP_LAST_WRITTEN_GTID() = '$wsrep_last_written_id_before' AS wsrep_last_written_id_match
 --enable_query_log
 
-# Should only advance after the transaction has been commited
+# Should only advance after the transaction has been committed
 
 COMMIT;
 --disable_query_log

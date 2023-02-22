@@ -27,7 +27,7 @@ connect (con2, localhost, root,,);
 # WAL. Connection two then inserts many rows to rotate the binlog. After
 # connection two completes, connection one continues only to crash before commit
 # but after binlog write. On crash recovery we see that connection one's value
-# has been recovered and commited
+# has been recovered and committed
 connection con1;
 --echo 'con1'
 --exec echo "restart" > $MYSQLTEST_VARDIR/tmp/mysqld.1.expect

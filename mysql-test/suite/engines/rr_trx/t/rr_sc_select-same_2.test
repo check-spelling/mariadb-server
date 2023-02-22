@@ -17,7 +17,7 @@
 #
 # This and similar tests (transactions) should contain some random "filler"
 # between the SELECTs so that they may run in different conditions, such as:
-#   * some other transactions may have commited in the meantime
+#   * some other transactions may have committed in the meantime
 #   * a scavenge run may have happened (falcon)
 #   * etc
 #

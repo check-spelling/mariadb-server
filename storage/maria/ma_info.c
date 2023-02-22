@@ -48,7 +48,7 @@ int maria_status(MARIA_HA *info, register MARIA_INFO *x, uint flag)
   }
   if (flag & HA_STATUS_VARIABLE)
   {
-    /* If table is locked, give versioned number otherwise last commited */
+    /* If table is locked, give versioned number otherwise last committed */
     if (info->lock_type == F_UNLCK)
       x->records         = share->state.state.records;
     else

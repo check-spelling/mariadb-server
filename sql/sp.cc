@@ -697,7 +697,7 @@ Sp_handler::db_find_routine(THD *thd, const Database_qualified_name *name,
   longlong modified;
   Sp_chistics chistics;
   THD::used_t saved_time_zone_used= thd->used & THD::TIME_ZONE_USED;
-  bool trans_commited= 0;
+  bool trans_committed= 0;
   sql_mode_t sql_mode;
   Stored_program_creation_ctx *creation_ctx;
   AUTHID definer;
@@ -758,7 +758,7 @@ Sp_handler::db_find_routine(THD *thd, const Database_qualified_name *name,
 
   creation_ctx= Stored_routine_creation_ctx::load_from_db(thd, name, table);
 
-  trans_commited= 1;
+  trans_committed= 1;
   thd->commit_whole_transaction_and_close_tables();
   new_trans.restore_old_transaction();
 
@@ -770,7 +770,7 @@ Sp_handler::db_find_routine(THD *thd, const Database_qualified_name *name,
     does not affect replication.
   */  
   thd->used= (thd->used & ~THD::TIME_ZONE_USED) | saved_time_zone_used;
-  if (!trans_commited)
+  if (!trans_committed)
   {
     if (table)
       thd->commit_whole_transaction_and_close_tables();

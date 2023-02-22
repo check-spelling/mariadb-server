@@ -52,7 +52,7 @@ SET @b= unix_timestamp(current_timestamp()) - unix_timestamp(@a);
 SELECT IF(@b < 20, "Ok", CONCAT("Error: too much time elapsed: ", @b, " seconds >= 20"));
 
 # All connections are to the same server. One transaction occurs on con1. It is
-# commited before con2 is started. con2 transaction violates the unique key contraint. This
+# committed before con2 is started. con2 transaction violates the unique key contraint. This
 # type of group commit is binlog_group_commit_trigger_lock_wait so that further con2
 # transactions will occur afterwards as they may be as result of the ER_DUP_ENTRY on the 
 # application side.

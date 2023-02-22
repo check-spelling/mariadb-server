@@ -7766,7 +7766,7 @@ static bool mysql_inplace_alter_table(THD *thd,
   {
     /*
       The above should never fail. If it failed, the new structure is
-      commited and we have no way to roll back.
+      committed and we have no way to roll back.
       The best we can do is to continue, but send an error to the
       user that something when wrong
     */

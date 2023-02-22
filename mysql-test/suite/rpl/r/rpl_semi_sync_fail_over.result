@@ -104,9 +104,9 @@ connection server_2;
 # Expected State post crash:
 #=================================================================
 # Master                |  Slave                                 |
-# 0-1-6 (Not commited)  |  0-1-6 (Received through semi-sync     |
+# 0-1-6 (Not committed)  |  0-1-6 (Received through semi-sync     |
 #                       |         replication and applied)       |
-# 0-2-7 (Not commited)  |  0-2-7 (Received through semi-sync     |
+# 0-2-7 (Not committed)  |  0-2-7 (Received through semi-sync     |
 #                       |         replication and applied)       |
 #=================================================================
 connect  conn_client,127.0.0.1,root,,test,$SERVER_MYPORT_2,;
@@ -183,9 +183,9 @@ connection server_1;
 # Expected State post crash:
 #=================================================================
 # Master                  | Slave                                |
-# 0-1-9  (Not commited)   | 0-1-9 (Received through semi-sync    |
+# 0-1-9  (Not committed)   | 0-1-9 (Received through semi-sync    |
 #                         |  replication and applied)            |
-# 0-1-10 (Not commited -  |                                      |
+# 0-1-10 (Not committed -  |                                      |
 #  never sent to slave)   |                                      |
 #=================================================================
 connect  conn_client,127.0.0.1,root,,test,$SERVER_MYPORT_1,;

@@ -5,7 +5,7 @@
 # as far as binlog is concerned.
 #
 # The prepared XA transactions can be disconnected from the client,
-# discovered from another connection and commited or rolled back
+# discovered from another connection and committed or rolled back
 # later. They also survive the server restart.  The test runs two
 # loops each consisting of prepared XA:s generation, their
 # manipulation and a server restart followed with survived XA:s

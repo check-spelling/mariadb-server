@@ -39,7 +39,7 @@ CREATE TABLE tm (f INT) ENGINE=Aria;
 # Crash and restart server with --rpl-semi-sync-slave-enabled=1
 #
 # During recovery of binary log 'query1' status is checked with InnoDB engine,
-# it will be in prepared but not yet commited. All transactions starting from
+# it will be in prepared but not yet committed. All transactions starting from
 # 'query1' onwards will be removed from the binary log.
 # Show-binlog-events is to prove that.
 

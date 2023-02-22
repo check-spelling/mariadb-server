@@ -11329,7 +11329,7 @@ int Recovery_context::next_binlog_or_round(int& round,
       /*
         Restore the 1st round saved estimate if it was not refined in the 2nd.
         That can only occur in multiple log files context when the inital file
-        has a truncation candidate (a `g`) and does not have any commited `G`,
+        has a truncation candidate (a `g`) and does not have any committed `G`,
         *and* other files (binlog-checkpoint one and so on) do not have any
         transaction-in-doubt.
       */

@@ -105,9 +105,9 @@ SHOW VARIABLES LIKE 'gtid_binlog_state';
 --echo # Expected State post crash:
 --echo #=================================================================
 --echo # Master                |  Slave                                 |
---echo # 0-1-6 (Not commited)  |  0-1-6 (Received through semi-sync     |
+--echo # 0-1-6 (Not committed)  |  0-1-6 (Received through semi-sync     |
 --echo #                       |         replication and applied)       |
---echo # 0-2-7 (Not commited)  |  0-2-7 (Received through semi-sync     |
+--echo # 0-2-7 (Not committed)  |  0-2-7 (Received through semi-sync     |
 --echo #                       |         replication and applied)       |
 --echo #=================================================================
 --let $log_search_pattern=truncated binlog file:.*slave.*000002.* to remove transactions starting from GTID 0-1-6
@@ -156,9 +156,9 @@ SHOW VARIABLES LIKE 'gtid_binlog_state';
 --echo # Expected State post crash:
 --echo #=================================================================
 --echo # Master                  | Slave                                |
---echo # 0-1-9  (Not commited)   | 0-1-9 (Received through semi-sync    |
+--echo # 0-1-9  (Not committed)   | 0-1-9 (Received through semi-sync    |
 --echo #                         |  replication and applied)            |
---echo # 0-1-10 (Not commited -  |                                      |
+--echo # 0-1-10 (Not committed -  |                                      |
 --echo #  never sent to slave)   |                                      |
 --echo #=================================================================
 --let $log_search_pattern=truncated binlog file:.*master.*000002.* to remove transactions starting from GTID 0-1-9

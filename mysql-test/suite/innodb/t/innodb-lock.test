@@ -70,7 +70,7 @@ set @@innodb_table_locks=0;
 
 --echo # The following statement should block because SQL-level lock
 --echo # is taken on t1 which will wait until concurrent transaction
---echo # is commited.
+--echo # is committed.
 --echo # Sending:
 --send lock table t1 write;
 
@@ -99,7 +99,7 @@ select * from t1 where id = 0 for update;
 connection con2;
 --echo # The following statement should block because SQL-level lock
 --echo # is taken on t1 which will wait until concurrent transaction
---echo # is commited.
+--echo # is committed.
 --echo # Sending:
 --send lock table t1 read;
 
