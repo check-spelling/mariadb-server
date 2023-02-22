@@ -28,7 +28,7 @@ select * from t1;
 # There is no point in testing REPLICATIION of the IS_*_LOCK
 # functions; slave does not run with the same concurrency context as
 # master (generally in slave we can't know that on master this lock
-# was already held by another connection and so that the the
+# was already held by another connection and so that the
 # get_lock() we're replicating timed out on master hence returned 0,
 # or that the is_free_lock() we're playing returned 0 etc.
 # But here all we do is test these functions outside of replication.

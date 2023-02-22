@@ -517,7 +517,7 @@ sub create
   push(@queries,$query);
   $nr=0;
 
-  # Prepend table_name to index name because the the name may clash with
+  # Prepend table_name to index name because the name may clash with
   # a field name. (Should be diffent name space, but this is mSQL...)
 
   foreach $index (@$index)

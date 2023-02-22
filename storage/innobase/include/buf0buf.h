@@ -1459,7 +1459,7 @@ public:
 	ulint		mutex_exit_forbidden; /*!< Forbid release mutex */
 #endif
 	ut_allocator<unsigned char>	allocator;	/*!< Allocator used for
-					allocating memory for the the "chunks"
+					allocating memory for the "chunks"
 					member. */
 	ulint		n_chunks;	/*!< number of buffer pool chunks */
 	ulint		n_chunks_new;	/*!< new number of buffer pool chunks.

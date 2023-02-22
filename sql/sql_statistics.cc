@@ -400,7 +400,7 @@ public:
   statistical data is to be read. E.g. if the index idx consists of 3
   components (p1,p2,p3) the table  index_stats usually will contain 3 rows for
   this index: the first - for the prefix (p1), the second - for the prefix
-  (p1,p2), and the third - for the the prefix (p1,p2,p3). After the key fields
+  (p1,p2), and the third - for the prefix (p1,p2,p3). After the key fields
   has been set a call of get_stat_value looks for a row by the set key value.
   If the row is found and the value of the avg_frequency column is not null 
   then this value is assigned to key_info->read_stat.avg_frequency[k].

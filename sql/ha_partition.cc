@@ -9663,7 +9663,7 @@ ha_rows ha_partition::min_rows_for_estimate()
     All partitions might have been left as unused during partition pruning
     due to, for example, an impossible WHERE condition. Nonetheless, the
     optimizer might still attempt to perform (e.g. range) analysis where an
-    estimate of the the number of rows is calculated using records_in_range.
+    estimate of the number of rows is calculated using records_in_range.
     Hence, to handle this and other possible cases, use zero as the minimum
     number of rows to base the estimate on if no partition is being used.
   */

@@ -1113,7 +1113,7 @@ buf_block_t *fsp_alloc_free_page(fil_space_t *space, uint32_t hint,
       and add it to the FREE_FRAG list. NOTE that the allocation may
       have as a side-effect that an extent containing a descriptor
       page is added to the FREE_FRAG list. But we will allocate our
-      page from the the free extent anyway. */
+      page from the free extent anyway. */
       descr= fsp_alloc_free_extent(space, hint, &xdes, mtr, err);
       if (!descr)
         return nullptr;

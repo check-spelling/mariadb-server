@@ -2352,7 +2352,7 @@ public:
   /** Autoinc counter value to give to the next inserted row. */
   uint64_t autoinc;
 
-  /** The transaction that currently holds the the AUTOINC lock on this table.
+  /** The transaction that currently holds the AUTOINC lock on this table.
   Protected by lock_mutex.
   The thread that is executing autoinc_trx may read this field without
   holding a latch, in row_lock_table_autoinc_for_mysql().

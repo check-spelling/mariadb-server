@@ -1952,7 +1952,7 @@ rec_t* btr_page_get_split_rec_to_left(const btr_cur_t* cursor)
 	of the clustered index, if and only if index->is_instant().
 	However, during innobase_instant_try(), index->is_instant()
 	would already hold when row_ins_clust_index_entry_low()
-	is being invoked to insert the the metadata record.
+	is being invoked to insert the metadata record.
 	So, we can only assert that when the metadata record exists,
 	index->is_instant() must hold. */
 	ut_ad(!page_is_leaf(page) || page_has_prev(page)

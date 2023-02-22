@@ -729,7 +729,7 @@ st_select_lex *wrap_tvc(THD *thd, st_select_lex *tvc_sl,
 
   /*
     Create a unit for the substituted select used for TVC and attach it
-    to the the wrapper select wrapper_sl as the only unit. The created
+    to the wrapper select wrapper_sl as the only unit. The created
     unit is the unit for the derived table tvc_x of the transformation.
   */
   if (!(derived_unit= new (thd->mem_root) SELECT_LEX_UNIT()))

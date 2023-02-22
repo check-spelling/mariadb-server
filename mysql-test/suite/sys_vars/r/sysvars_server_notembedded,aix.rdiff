@@ -63,7 +63,7 @@ index bb3378139f2..ddab28508ec 100644
 -VARIABLE_NAME	THREAD_POOL_PRIORITY
 -VARIABLE_SCOPE	SESSION
 -VARIABLE_TYPE	ENUM
--VARIABLE_COMMENT	Threadpool priority. High priority connections usually start executing earlier than low priority.If priority set to 'auto', the the actual priority(low or high) is determined based on whether or not connection is inside transaction.
+-VARIABLE_COMMENT	Threadpool priority. High priority connections usually start executing earlier than low priority.If priority set to 'auto', the actual priority(low or high) is determined based on whether or not connection is inside transaction.
 -NUMERIC_MIN_VALUE	NULL
 -NUMERIC_MAX_VALUE	NULL
 -NUMERIC_BLOCK_SIZE	NULL

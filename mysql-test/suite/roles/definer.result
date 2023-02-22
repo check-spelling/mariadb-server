@@ -634,7 +634,7 @@ Grants for utest
 GRANT SELECT ON *.* TO `utest`
 drop role utest;
 #
-# MDEV-13676: Field "create Procedure" is NULL, even if the the user
+# MDEV-13676: Field "create Procedure" is NULL, even if the user
 # has role which is the definer. (SHOW CREATE PROCEDURE)
 #
 create database rtest;

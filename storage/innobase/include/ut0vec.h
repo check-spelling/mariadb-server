@@ -74,7 +74,7 @@ ib_vector_create(
 
 /********************************************************************
 Destroy the vector. Make sure the vector owns the allocator, e.g.,
-the heap in the the heap allocator. */
+the heap in the heap allocator. */
 UNIV_INLINE
 void
 ib_vector_free(

@@ -987,7 +987,7 @@ static bool debug_sync_set_action(THD *thd, st_debug_sync_action *action)
     If the terminator of the token is ASCII NUL ('\0'), it returns a
     pointer to the terminator (string end).
 
-    If the terminator is a space character, it replaces the the first
+    If the terminator is a space character, it replaces the first
     byte of the terminator character by ASCII NUL ('\0'), skips the (now
     corrupted) terminator character, and skips all following space
     characters. It returns a pointer to the next non-space character or

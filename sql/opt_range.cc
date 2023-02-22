@@ -8473,7 +8473,7 @@ SEL_TREE *Item_func_in::get_func_row_mm_tree(RANGE_OPT_PARAM *param,
       res_tree= 0;
       break;
     }
-    /* Join the disjunct the the OR tree that is being constructed */
+    /* Join the disjunct the OR tree that is being constructed */
     res_tree= !res_tree ? and_tree : tree_or(param, res_tree, and_tree);
   }
   if (omitted_tuples == argument_count() - 1)
@@ -9538,7 +9538,7 @@ int and_range_trees(RANGE_OPT_PARAM *param, SEL_TREE *tree1, SEL_TREE *tree2,
       tree2 represents the formula RT2 AND MT2 
         where RT2 = R2_1 AND ... AND R2_k2, MT2=M2_1 AND ... AND M2_l2.
 
-    The result tree will represent the formula of the the following structure:
+    The result tree will represent the formula of the following structure:
       RT AND RT1MT2 AND RT2MT1, such that
         rt is a tree obtained by range intersection of trees tree1 and tree2,
         RT1MT2 = RT1M2_1 AND ... AND RT1M2_l2,
@@ -9626,7 +9626,7 @@ SEL_TREE *tree_and(RANGE_OPT_PARAM *param, SEL_TREE *tree1, SEL_TREE *tree2)
     For each imerge in 'tree' that contains only one disjunct tree, i.e.
     for any imerge of the form m=rt, the function performs and operation
     the range part of tree, replaces rt the with the result of anding and
-    removes imerge m from the the merge part of 'tree'.
+    removes imerge m from the merge part of 'tree'.
 
   RETURN VALUE
     none          
@@ -15658,7 +15658,7 @@ bool QUICK_GROUP_MIN_MAX_SELECT::add_range(SEL_ARG *sel_range)
   NOTES
     quick_prefix_select is made over the conditions on the whole key.
     It defines a number of ranges of length x. 
-    However when jumping through the prefixes we use only the the first 
+    However when jumping through the prefixes we use only the first 
     few most significant keyparts in the range key. However if there
     are more keyparts to follow the ones we are using we must make the 
     condition on the key inclusive (because x < "ab" means 

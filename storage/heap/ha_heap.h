@@ -20,7 +20,7 @@
 #pragma interface			/* gcc class implementation */
 #endif
 
-/* class for the the heap handler */
+/* class for the heap handler */
 
 #include <heap.h>
 #include "sql_class.h"                          /* THD */

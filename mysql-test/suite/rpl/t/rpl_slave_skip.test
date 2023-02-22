@@ -29,7 +29,7 @@ SELECT * FROM t2;
 save_master_pos;
 connection slave;
 
-# Stop when reaching the the first table map event.
+# Stop when reaching the first table map event.
 --replace_result $master_log_pos MASTER_LOG_POS
 eval START SLAVE UNTIL MASTER_LOG_FILE='master-bin.000001', MASTER_LOG_POS=$master_log_pos;
 source include/wait_for_slave_sql_to_stop.inc;

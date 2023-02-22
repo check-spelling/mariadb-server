@@ -5010,7 +5010,7 @@ int SJ_TMP_TABLE::sj_weedout_check_row(THD *thd)
 
   ptr= tmp_table->record[0] + 1;
 
-  /* Put the the rowids tuple into table->record[0]: */
+  /* Put the rowids tuple into table->record[0]: */
 
   // 1. Store the length 
   if (((Field_varstring*)(tmp_table->field[0]))->length_bytes == 1)

@@ -503,7 +503,7 @@ bool JAVAConn::Open(PGLOBAL g)
 
 #if 0		// Suppressed because it does not make any usable change
 	if (b && jpath && *jpath) {
-		// Try to add that path the the jvm class path
+		// Try to add that path the jvm class path
 		jmethodID alp = env->GetStaticMethodID(jdi, "addLibraryPath",
 			"(Ljava/lang/String;)I");
 

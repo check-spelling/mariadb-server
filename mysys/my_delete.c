@@ -64,7 +64,7 @@ int my_delete(const char *name, myf MyFlags)
   Delete file.
 
   The function also makes best effort to minimize number of errors, 
-  where another program (or thread in the current program) has the the same file
+  where another program (or thread in the current program) has the same file
   open.
 
   We're using several tricks to prevent the errors, such as

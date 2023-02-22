@@ -1,4 +1,4 @@
-# For a given event which is at position $master_log_pos in the the master's
+# For a given event which is at position $master_log_pos in the master's
 # binary log, returns its position in the slave's relay log file
 # $relay_log_file.  
 # The position is stored in the variable $relay_log_pos.

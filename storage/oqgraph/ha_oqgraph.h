@@ -39,7 +39,7 @@ namespace open_query
   class oqgraph_share;
 }
 
-/* class for the the Open Query Graph handler */
+/* class for the Open Query Graph handler */
 
 class ha_oqgraph: public handler
 {

@@ -4506,7 +4506,7 @@ void do_send_quit(struct st_command *command)
   <db> - default database
 
   Changes the user and causes the database specified by db to become
-  the default (current) database for the the current connection.
+  the default (current) database for the current connection.
 
 */
 

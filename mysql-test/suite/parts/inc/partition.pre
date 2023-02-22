@@ -305,7 +305,7 @@ if (0)
 #           from open bugs
 #           This should not occur often !
 #           Example: There is extreme often an auxiliary testscript sourced,
-#                    but the the conditions vary. We get under a certain combination
+#                    but the conditions vary. We get under a certain combination
 #                  of conditions a wrong result set or server response.
 #      b) Set "fixed_bug<number>" variables to 0 if there are open engine
 #         specific bugs. They are later set to 1 within the toplevel script.

@@ -36,7 +36,7 @@ CREATE DEFINER='mariadb.sys'@'localhost' PROCEDURE diagnostics (
              Some of the sys schema views are calculated as initial (optional), overall, delta:
 
                 * The initial view is the content of the view at the start of this procedure.
-                  This output will be the same as the the start values used for the delta view.
+                  This output will be the same as the start values used for the delta view.
                   The initial view is included if @sys.diagnostics.include_raw = ''ON''.
                 * The overall view is the content of the view at the end of this procedure.
                   This output is the same as the end values used for the delta view.

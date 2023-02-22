@@ -415,7 +415,7 @@ public:
     @param  mdl_namespace Id of namespace of object to be locked
     @param  db            Name of database to which the object belongs
     @param  name          Name of of the object
-    @param  key           Where to store the the MDL key.
+    @param  key           Where to store the MDL key.
   */
   void mdl_key_init(enum_mdl_namespace mdl_namespace_arg,
                     const char *db, const char *name_arg)

@@ -1752,7 +1752,7 @@ io_write_requests: 0
 
 Shows indexes which are made redundant (or duplicate) by other (dominant) keys.
 
-Also includes the the helper view `x$schema_flattened_keys`.
+Also includes the helper view `x$schema_flattened_keys`.
 
 ##### Structures
 
@@ -4212,7 +4212,7 @@ Create a report of the current status of the server for diagnostics purposes. Da
 Some of the sys schema views are calculated as initial (optional), overall, delta:
 
 * The initial view is the content of the view at the start of this procedure.
-  This output will be the same as the the start values used for the delta view.
+  This output will be the same as the start values used for the delta view.
   The initial view is included if @sys.diagnostics.include_raw = 'ON'.
 * The overall view is the content of the view at the end of this procedure.
   This output is the same as the end values used for the delta view.

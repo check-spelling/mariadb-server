@@ -53,7 +53,7 @@ table_threads::m_share=
                       "PROCESSLIST_USER VARCHAR(" USERNAME_CHAR_LENGTH_STR ") comment 'Foreground thread user, or NULL for a background thread.',"
                       "PROCESSLIST_HOST VARCHAR(" HOSTNAME_LENGTH_STR ") comment 'Foreground thread host, or NULL for a background thread.',"
                       "PROCESSLIST_DB VARCHAR(64) comment 'Thread''s default database, or NULL if none exists.',"
-                      "PROCESSLIST_COMMAND VARCHAR(16) comment 'Type of command executed by the thread. These correspond to the the COM_xxx client/server protocol commands, and the Com_xxx status variables. See Thread Command Values.',"
+                      "PROCESSLIST_COMMAND VARCHAR(16) comment 'Type of command executed by the thread. These correspond to the COM_xxx client/server protocol commands, and the Com_xxx status variables. See Thread Command Values.',"
                       "PROCESSLIST_TIME BIGINT comment 'Time in seconds the thread has been in its current state.',"
                       "PROCESSLIST_STATE VARCHAR(64) comment 'Action, event or state indicating what the thread is doing.',"
                       "PROCESSLIST_INFO LONGTEXT comment 'Statement being executed by the thread, or NULL if a statement is not being executed. If a statement results in calling other statements, such as for a stored procedure, the innermost statement from the stored procedure is shown here.',"

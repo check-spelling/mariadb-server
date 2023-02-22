@@ -430,7 +430,7 @@ rtr_page_copy_rec_list_start_no_locks(
 	mtr_t*		mtr);		/*!< in: mtr */
 
 /****************************************************************//**
-Merge 2 mbrs and update the the mbr that cursor is on. */
+Merge 2 mbrs and update the mbr that cursor is on. */
 void
 rtr_merge_and_update_mbr(
 /*=====================*/

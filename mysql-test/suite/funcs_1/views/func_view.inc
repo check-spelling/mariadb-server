@@ -26,7 +26,7 @@
 #       Maybe it is better to change the architecture of this test in such
 #       a way:
 #       1. A generator script (this one or written in Perl or SP language)
-#          generates an prototype of the the final testscript.
+#          generates an prototype of the final testscript.
 #       2. Some manual adjustments because of open bugs (depending on
 #          storage engine or function) might be needed (I hope not :)
 #       3. The final testscript is pushed to the other regression testscripts.
@@ -338,7 +338,7 @@ INSERT INTO t1_values SET
 #       executing this test.
 #       Example: current time, absolute path to some files ...
 #     - Please derive the functions to be checked from the MySQL manual
-#       and use the same order. This means copy the the function names as
+#       and use the same order. This means copy the function names as
 #       comment into this test and start to implement a testcase for your
 #       most preferred function.
 #       This method avoids that we forget a function and gives a better

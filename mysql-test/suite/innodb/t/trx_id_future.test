@@ -23,7 +23,7 @@ my $file = "$ENV{MYSQLD_DATADIR}/test/t1.ibd";
 open(FILE, "+<", $file) || die "Unable to open $file";
 binmode FILE;
 
-#Seek the the infimum record and get the offset to next record
+#Seek the infimum record and get the offset to next record
 #Infimum record exist at offset 101 for redundant format
 #And offset to the next record is present 2 bytes prior to
 #infimum record

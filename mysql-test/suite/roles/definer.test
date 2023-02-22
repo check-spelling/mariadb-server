@@ -343,7 +343,7 @@ show grants for utest;
 drop role utest;
 
 --echo #
---echo # MDEV-13676: Field "create Procedure" is NULL, even if the the user
+--echo # MDEV-13676: Field "create Procedure" is NULL, even if the user
 --echo # has role which is the definer. (SHOW CREATE PROCEDURE)
 --echo #
 

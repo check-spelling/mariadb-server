@@ -944,7 +944,7 @@ bool check_func_dependency(JOIN *join,
   dac.usable_tables= dep_tables;
 
   /*
-    Analyze the the ON expression and create Dep_module_expr objects and
+    Analyze the ON expression and create Dep_module_expr objects and
       Dep_value_field objects for the used fields.
   */
   uint and_level=0;

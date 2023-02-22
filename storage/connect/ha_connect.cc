@@ -1796,7 +1796,7 @@ PIXDEF ha_connect::GetIndexInfo(TABLE_SHARE *s)
     // Allocate the index description block
     xdp= new(g) INDEXDEF(name, unique, n);
 
-    // Get the the key parts info
+    // Get the key parts info
     for (int k= 0; (unsigned)k < kp.user_defined_key_parts; k++) {
       pn= (char*)kp.key_part[k].field->field_name.str;
       name= PlugDup(g, pn);
@@ -1864,7 +1864,7 @@ bool ha_connect::CheckVirtualIndex(TABLE_SHARE *s)
 
     // Now get index information
 
-    // Get the the key parts info
+    // Get the key parts info
     for (int k= 0; (unsigned)k < kp.user_defined_key_parts; k++) {
       fp= kp.key_part[k].field;
       rid= (fp->option_struct) ? fp->option_struct->special : NULL;

@@ -618,7 +618,7 @@ static int search_paths(const char *base_path, const char *tool_name,
   Read the plugin ini file.
 
   This function attempts to read the plugin config file from the plugin_dir
-  path saving the data in the the st_plugin structure. If the file is not
+  path saving the data in the st_plugin structure. If the file is not
   found or the file cannot be read, an error is generated.
 
   @retval int error = 1, success = 0

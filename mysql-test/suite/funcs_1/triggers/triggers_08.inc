@@ -51,7 +51,7 @@ let $message= Testcase 3.5.8.2: (implied in previous tests);
 #Test case: Ensure that the triggered action can any valid SQL statement / set
 #           of valid SQL statements, provided the statements are written within
 #           a BEGIN/END compound statement construct
-# OBN - At this point the tests focuses on the the INSERT/UPDATE/DELETE SQL statements
+# OBN - At this point the tests focuses on the INSERT/UPDATE/DELETE SQL statements
 #       as there are the most likely to be used in triggers
 let $message= Testcase 3.5.8.3/4:;
 --source include/show_msg.inc

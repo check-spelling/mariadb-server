@@ -305,7 +305,7 @@ DELETE FROM t1;
 # Case 3c: Two INSERTs are run inside stored procedure, this time
 # the first INSERT will have a BF abort and real conflict.
 # A CONTINUE HANDLER is declared for the procedure.  The expected outcome
-# is that the the first INSERT fails but the second is executed without
+# is that the first INSERT fails but the second is executed without
 # errors. wsrep_local_replays is not incremented.
 #
 DELIMITER |;

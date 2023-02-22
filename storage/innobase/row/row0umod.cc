@@ -1154,7 +1154,7 @@ close_table:
 
 		btr_cur_upd_lock_and_undo() only writes the undo log
 		record after successfully acquiring an exclusive lock
-		on the the clustered index record. That lock will not
+		on the clustered index record. That lock will not
 		be released before the transaction is committed or
 		fully rolled back. (Exception: if the server was
 		killed, restarted, and shut down again before the

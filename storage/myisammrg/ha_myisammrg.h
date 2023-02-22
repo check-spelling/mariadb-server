@@ -19,7 +19,7 @@
 #pragma interface			/* gcc class implementation */
 #endif
 
-/* class for the the myisam merge handler */
+/* class for the myisam merge handler */
 
 #include <myisammrg.h>
 

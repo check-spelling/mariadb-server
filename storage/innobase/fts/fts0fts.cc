@@ -5465,7 +5465,7 @@ fts_savepoint_rollback(
 
 	savepoints = trx->fts_trx->savepoints;
 
-	/* We pop all savepoints from the the top of the stack up to
+	/* We pop all savepoints from the top of the stack up to
 	and including the instance that was found. */
 	i = fts_savepoint_lookup(savepoints, name);
 

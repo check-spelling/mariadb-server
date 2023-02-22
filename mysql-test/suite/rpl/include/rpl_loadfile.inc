@@ -53,7 +53,7 @@
 #      vi) sync it with master so that it gets the updates from binlog (which 
 #          should have bin logged in row format). 
 #
-#          If the the binlog format does not change to row, then the assertion
+#          If the binlog format does not change to row, then the assertion
 #          done in the following step fails. This happens because tables differ 
 #          since the file does not exist anymore, meaning that when slave 
 #          attempts to execute LOAD_FILE statement it inserts NULL on table 

@@ -1809,7 +1809,7 @@ rtr_merge_mbr_changed(
 }
 
 /****************************************************************//**
-Merge 2 mbrs and update the the mbr that cursor is on. */
+Merge 2 mbrs and update the mbr that cursor is on. */
 void
 rtr_merge_and_update_mbr(
 /*=====================*/

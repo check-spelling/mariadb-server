@@ -165,7 +165,7 @@ static struct my_option my_long_options[] =
    0, 0, 0, GET_NO_ARG, NO_ARG, 0, 0, 0, 0, 0, 0},
   {"create-missing-keys", OPT_CREATE_MISSING_KEYS,
    "Create missing keys. This assumes that the data file is correct and that "
-   "the the number of rows stored in the index file is correct. Enables "
+   "the number of rows stored in the index file is correct. Enables "
    "--quick",
    0, 0, 0, GET_NO_ARG, NO_ARG, 0, 0, 0, 0, 0, 0},
 #ifndef DBUG_OFF
@@ -401,7 +401,7 @@ static void usage(void)
 		      get faster inserts.\n\
   --create-missing-keys\n\
                       Create missing keys. This assumes that the data\n\
-                      file is correct and that the the number of rows stored\n\
+                      file is correct and that the number of rows stored\n\
                       in the index file is correct. Enables --quick\n\
   --max-record-length=#\n\
                       Skip rows bigger than this if myisamchk can't allocate\n\

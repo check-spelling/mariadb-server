@@ -71,7 +71,7 @@ static unsigned long lfactor[9]=
     The error parameter contains information how things went:
     -1		Number was an ok negative number
     0	 	ok
-    ERANGE	If the the value of the converted number exceeded the
+    ERANGE	If the value of the converted number exceeded the
 	        maximum negative/unsigned long long integer.
 		In this case the return value is ~0 if value was
 		positive and LONGLONG_MIN if value was negative.

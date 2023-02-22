@@ -552,7 +552,7 @@ bool lock_table_has_locks(dict_table_t *table);
 dberr_t lock_wait(que_thr_t *thr);
 /*********************************************************************//**
 Unlocks AUTO_INC type locks that were possibly reserved by a trx. This
-function should be called at the the end of an SQL statement, by the
+function should be called at the end of an SQL statement, by the
 connection thread that owns the transaction (trx->mysql_thd). */
 void
 lock_unlock_table_autoinc(

@@ -528,7 +528,7 @@ eval DELETE FROM t1 WHERE f_charbig = '#$max_int_4##';
 #-------------------------------------------------------------------------------
 # 5    Experiments with NULL
 # If the result of the partitioning function IS NULL partitioning treats
-# this record as if the the result of the partitioning function is
+# this record as if the result of the partitioning function is
 #      MySQL 5.1 <  March 2006 : zero
 #      MySQL 5.1 >= March 2006 : LONGLONG_MIN
 # Let's INSERT a record where the result of the partitioning function is

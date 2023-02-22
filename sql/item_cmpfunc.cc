@@ -1689,7 +1689,7 @@ bool Item_in_optimizer::is_null()
   @detail
     Recursively transform the left and the right operand of this Item. The
     Right operand is an Item_in_subselect or its subclass. To avoid the
-    creation of new Items, we use the fact the the left operand of the
+    creation of new Items, we use the fact the left operand of the
     Item_in_subselect is the same as the one of 'this', so instead of
     transforming its operand, we just assign the left operand of the
     Item_in_subselect to be equal to the left operand of 'this'.
@@ -6815,7 +6815,7 @@ void Item_equal::add_const(THD *thd, Item *c)
 
     - Also, Field_str::test_if_equality_guarantees_uniqueness() guarantees
     that the comparison collation of all equalities handled by Item_equal
-    match the the collation of the field.
+    match the collation of the field.
 
     Therefore, at Item_equal::add_const() time all constants constXXX
     should be directly comparable to each other without an additional

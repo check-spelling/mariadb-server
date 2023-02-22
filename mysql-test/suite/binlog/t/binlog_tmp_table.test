@@ -138,7 +138,7 @@ create temporary table t1(i int);
 -- let $wait_binlog_event= DROP
 -- source include/wait_for_binlog_event.inc
 
-# action: insert in the t1. This would cause the the test to fail,
+# action: insert in the t1. This would cause the test to fail,
 #         because when replaying the binlog the previous implicit drop
 #         temp table would have been executed under the wrong
 #         pseudo_thread_id, dropping the tmp table on con2.

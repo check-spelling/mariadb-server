@@ -283,7 +283,7 @@ static struct my_option my_long_options[] =
    0, 0, 0, GET_NO_ARG, NO_ARG, 0, 0, 0, 0, 0, 0},
   {"create-missing-keys", OPT_CREATE_MISSING_KEYS,
    "Create missing keys. This assumes that the data file is correct and that "
-   "the the number of rows stored in the index file is correct. Enables "
+   "the number of rows stored in the index file is correct. Enables "
    "--quick",
    0, 0, 0, GET_NO_ARG, NO_ARG, 0, 0, 0, 0, 0, 0},
 #ifndef DBUG_OFF
@@ -548,7 +548,7 @@ Recover (repair)/ options (When using '--recover' or '--safe-recover'):\n\
                       file when it's full).\n\
  --create-missing-keys\n\
                       Create missing keys. This assumes that the data\n\
-                      file is correct and that the the number of rows stored\n\
+                      file is correct and that the number of rows stored\n\
                       in the index file is correct. Enables --quick.\n\
   -e, --extend-check  Try to recover every possible row from the data file\n\
 		      Normally this will also find a lot of garbage rows;\n\

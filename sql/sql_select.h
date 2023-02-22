@@ -1753,7 +1753,7 @@ public:
     memcpy(dest, src, src_arr.size() * src_arr.element_size());
   }
 
-  /// Overwrites 'ref_ptrs' and remembers the the source as 'current'.
+  /// Overwrites 'ref_ptrs' and remembers the source as 'current'.
   void set_items_ref_array(Ref_ptr_array src_arr)
   {
     copy_ref_ptr_array(ref_ptrs, src_arr);

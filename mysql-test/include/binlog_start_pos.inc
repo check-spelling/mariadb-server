@@ -1,6 +1,6 @@
 ##############################################################################
 #
-# binlog_start_pos is the position of the the first event in the binary log
+# binlog_start_pos is the position of the first event in the binary log
 # which follows the Format description event. Intended to reduce test suite
 # dependance on the Format description event length changes (e.g. in case
 # of adding new events). Evaluated as:

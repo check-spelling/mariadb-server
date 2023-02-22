@@ -1173,7 +1173,7 @@ static int rdb_i_s_sst_props_fill_table(
   const Rdb_cf_manager &cf_manager = rdb_get_cf_manager();
 
   for (const auto &cf_handle : cf_manager.get_all_cf()) {
-    /* Grab the the properties of all the tables in the column family */
+    /* Grab the properties of all the tables in the column family */
     rocksdb::TablePropertiesCollection table_props_collection;
     const rocksdb::Status s =
         rdb->GetPropertiesOfAllTables(cf_handle, &table_props_collection);
@@ -1330,7 +1330,7 @@ static int rdb_i_s_index_file_map_fill_table(
   const Rdb_cf_manager &cf_manager = rdb_get_cf_manager();
 
   for (const auto &cf_handle : cf_manager.get_all_cf()) {
-    /* Grab the the properties of all the tables in the column family */
+    /* Grab the properties of all the tables in the column family */
     rocksdb::TablePropertiesCollection table_props_collection;
     const rocksdb::Status s =
         rdb->GetPropertiesOfAllTables(cf_handle, &table_props_collection);

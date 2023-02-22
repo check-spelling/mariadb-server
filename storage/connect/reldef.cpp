@@ -539,7 +539,7 @@ int TABDEF::GetColCatInfo(PGLOBAL g)
     i++;
     } // endwhile
 
-  // Degree is the the number of defined columns (informational)
+  // Degree is the number of defined columns (informational)
   if (i != GetDegree())
     SetDegree(i);
 

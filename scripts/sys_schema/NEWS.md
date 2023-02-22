@@ -38,7 +38,7 @@
 * New `session`/`x$session` views have been added, which give the same output as the `processlist` view counterparts, but filtered to only show foreground connections (**Contributed by Morgan Tocker**)
 * A new `session_ssl_status` view was added, which shows the SSL version, ciper and session resuse statistics for each connection (**Contributed by Daniël van Eeden**)
 * A new `schema_auto_increment_columns` view was added, that shows statistics on each auto_incrment within the instance, including the `auto_increment_ratio`, so you can easily monitor how full specific auto_increment columns are (**Contributed by Shlomi Noach**)
-* A new `schema_redundant_indexes` view was added, that shows indexes made redundant (or duplicated) by other more dominant indexes. Also includes the the helper view `x$schema_flattened_keys`. (**Contributed by Shlomi Noach**)
+* A new `schema_redundant_indexes` view was added, that shows indexes made redundant (or duplicated) by other more dominant indexes. Also includes the helper view `x$schema_flattened_keys`. (**Contributed by Shlomi Noach**)
 * New `schema_table_lock_waits`/`x$schema_table_lock_waits` views have been added, which show any sessions that are waiting for table level metadata locks, and the sessions that are blocking them. Resolves Git Issue #57, inspired by the suggestion from Daniël van Eeden
 * The `innodb_lock_waits` view had the following columns added to it, following a manually merged contribution from Shlomi Noach for a similar view
  * `wait_age_secs` - the current row lock wait time in seconds
@@ -61,7 +61,7 @@
  * Generated files are now output in to a "gen" directory, that is ignored by git
  * Added using a new default "mysql.sys@localhost" user (that has the account locked) for the MySQL 5.7+ integration as the DEFINER for all objects
  * Added a warning to the top of the generated integration file to also submit changes to the sys project
- * Improved the the option of skipping binary logs, so that all routines can load as well - those that used SET sql_log_bin will now select a warning when being used instead of setting the option
+ * Improved the option of skipping binary logs, so that all routines can load as well - those that used SET sql_log_bin will now select a warning when being used instead of setting the option
 
 ### Bug Fixes
 

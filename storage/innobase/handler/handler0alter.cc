@@ -3244,7 +3244,7 @@ innobase_get_foreign_key_info(
 					index = NULL;);
 
 			/* Check whether there exist such
-			index in the the index create clause */
+			index in the index create clause */
 			if (!index && !innobase_find_equiv_index(
 				    column_names, static_cast<uint>(i),
 				    ha_alter_info->key_info_buffer,
@@ -3309,7 +3309,7 @@ innobase_get_foreign_key_info(
 					referenced_index = NULL;);
 
 				/* Check whether there exist such
-				index in the the index create clause */
+				index in the index create clause */
 				if (!referenced_index) {
 					my_error(ER_FK_NO_INDEX_PARENT, MYF(0),
 						 fk_key->name.str

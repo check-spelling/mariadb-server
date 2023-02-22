@@ -2585,7 +2585,7 @@ public:
   bool online= false;
 
   /**
-    When ha_commit_inplace_alter_table() is called the the engine can
+    When ha_commit_inplace_alter_table() is called the engine can
     set this to a function to be called after the ddl log
     is committed.
   */
@@ -3769,7 +3769,7 @@ public:
   IO_AND_CPU_COST ha_keyread_time(uint index, ulong ranges, ha_rows rows,
                                   ulonglong blocks);
 
-  /* Same as above, but take into account copying the key the the SQL layer */
+  /* Same as above, but take into account copying the key the SQL layer */
   inline IO_AND_CPU_COST ha_keyread_and_copy_time(uint index, ulong ranges,
                                                   ha_rows rows,
                                                   ulonglong blocks)
@@ -4248,7 +4248,7 @@ public:
   virtual int extra_opt(enum ha_extra_function operation, ulong arg)
   { return extra(operation); }
   /*
-    Table version id for the the table. This should change for each
+    Table version id for the table. This should change for each
     sucessfull ALTER TABLE.
     This is used by the handlerton->check_version() to ask the engine
     if the table definition has been updated.

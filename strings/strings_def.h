@@ -23,7 +23,7 @@
 
 /*
   We can't use the original DBUG_ASSERT() (which includes _db_flush())
-  in the strings library as libdbug is compiled after the the strings
+  in the strings library as libdbug is compiled after the strings
   library and we don't want to have strings depending on libdbug which
   depends on mysys and strings.
 */

@@ -5071,7 +5071,7 @@ static SIMPLE_KEY_CACHE_CB
     to be built must be passed through the field 'partitions' of this
     structure.
     The parameter key_cache_block_size specifies the size of the
-    blocks in the the simple key caches to be built.
+    blocks in the simple key caches to be built.
     The parameters division_limit and  age_threshold determine the initial
     values of those characteristics of the simple key caches that are used for
     midpoint insertion strategy. The parameter use_mem specifies the total
@@ -5157,7 +5157,7 @@ int init_partitioned_key_cache(PARTITIONED_KEY_CACHE_CB *keycache,
             1. i == 0 and cnt < 0
             cnt < 0 => mem_per_cache is not big enough to allocate minimal
             number of key blocks in the key cache of the partition.
-            Decrease the the number of the partitions by 1 and start again.
+            Decrease the number of the partitions by 1 and start again.
             2. i > 0 
             There is not enough memory for one of the succeeding partitions.
             Just skip this partition decreasing the number of partitions in

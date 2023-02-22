@@ -1615,7 +1615,7 @@ static ulonglong d10[DIGITS_IN_ULONGLONG]=
 
     The error parameter contains information how things went:
     0	     ok
-    ERANGE   If the the value of the converted number is out of range
+    ERANGE   If the value of the converted number is out of range
     In this case the return value is:
     - ULONGLONG_MAX if unsigned_flag and the number was too big
     - 0 if unsigned_flag and the number was negative

@@ -351,7 +351,7 @@ static int read_meta_file(File meta_file, ha_rows *rows)
 
   DESCRIPTION
 
-    Write meta-info the the file. Only rows count, crashed bit and
+    Write meta-info the file. Only rows count, crashed bit and
     magic number matter now.
 
   RETURN

@@ -4585,7 +4585,7 @@ lock_print_info_all_transactions(
 
 #ifdef UNIV_DEBUG
 /*********************************************************************//**
-Find the the lock in the trx_t::trx_lock_t::table_locks vector.
+Find the lock in the trx_t::trx_lock_t::table_locks vector.
 @return true if found */
 static
 bool
@@ -5893,7 +5893,7 @@ void lock_sys_t::cancel(trx_t *trx)
 
 /*********************************************************************//**
 Unlocks AUTO_INC type locks that were possibly reserved by a trx. This
-function should be called at the the end of an SQL statement, by the
+function should be called at the end of an SQL statement, by the
 connection thread that owns the transaction (trx->mysql_thd). */
 void
 lock_unlock_table_autoinc(

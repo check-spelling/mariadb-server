@@ -46,7 +46,7 @@ PROCESSLIST_ID	The PROCESSLIST.ID value for threads displayed in the INFORMATION
 PROCESSLIST_USER	Foreground thread user, or NULL for a background thread.
 PROCESSLIST_HOST	Foreground thread host, or NULL for a background thread.
 PROCESSLIST_DB	Thread's default database, or NULL if none exists.
-PROCESSLIST_COMMAND	Type of command executed by the thread. These correspond to the the COM_xxx client/server protocol commands, and the Com_xxx status variables. See Thread Command Values.
+PROCESSLIST_COMMAND	Type of command executed by the thread. These correspond to the COM_xxx client/server protocol commands, and the Com_xxx status variables. See Thread Command Values.
 PROCESSLIST_TIME	Time in seconds the thread has been in its current state.
 PROCESSLIST_STATE	Action, event or state indicating what the thread is doing.
 PROCESSLIST_INFO	Statement being executed by the thread, or NULL if a statement is not being executed. If a statement results in calling other statements, such as for a stored procedure, the innermost statement from the stored procedure is shown here.
