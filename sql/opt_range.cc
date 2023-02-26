@@ -1139,7 +1139,7 @@ int imerge_list_or_tree(RANGE_OPT_PARAM *param,
     trees rti_j and rt the intersection of the indexes with defined ranges
     is empty.
     If the result of the pushdown operation for the imerge mi returns an
-    imerge with no trees then then not only nothing is added to the list 
+    imerge with no trees then not only nothing is added to the list 
     merges but mi itself is removed from the list. 
 
   TODO
