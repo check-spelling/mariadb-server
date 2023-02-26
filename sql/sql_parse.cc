@@ -8587,7 +8587,7 @@ void st_select_lex::add_joined_table(TABLE_LIST *table)
               / \
             t3   t4
 
-    If the transformed nested join node node is a natural join node like in
+    If the transformed nested join node is a natural join node like in
     the following query
       SELECT * FROM t1 JOIN t2 LEFT JOIN t3 USING(a)  (Q6)
     the transformation additionally has to take care about setting proper
