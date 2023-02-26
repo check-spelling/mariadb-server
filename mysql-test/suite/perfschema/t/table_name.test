@@ -11,7 +11,7 @@
 # the "#" is encoded to @0023 in the filename.)
 #
 # Given the ambiguity with temporary table names, the Performance Schema identifies
-# temporary tables tables either by the table category or by the filename.
+# temporary tables either by the table category or by the filename.
 #
 --source include/have_perfschema.inc
 --source include/have_innodb.inc

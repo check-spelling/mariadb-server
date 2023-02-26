@@ -246,7 +246,7 @@ fill_defined_view_parts (THD *thd, TABLE_LIST *view)
   @brief CREATE VIEW privileges pre-check.
 
   @param thd thread handler
-  @param tables tables used in the view
+  @param tables used in the view
   @param views views to create
   @param mode VIEW_CREATE_NEW, VIEW_ALTER, VIEW_CREATE_OR_REPLACE
 
