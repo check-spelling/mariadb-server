@@ -1276,7 +1276,7 @@ sp_head::execute(THD *thd, bool merge_da_on_success)
     Check that if there are not any instances after this one then
     pointer to the last instance points on this instance or if there are
     some instances after this one then recursion level of next instance
-    greater then recursion level of current instance on 1
+    greater than recursion level of current instance on 1
   */
   DBUG_ASSERT((m_next_cached_sp == 0 &&
                m_first_instance->m_last_cached_sp == this) ||

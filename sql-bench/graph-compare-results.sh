@@ -623,7 +623,7 @@ sub lines {
         $im->filledRectangle($xbegin, $ytmp, $xtmp, $ytmp1, $tot{$server}{'color'});
         $im->rectangle($xbegin, $ytmp, $xtmp, $ytmp1, $black);
 # print the seconds behind the bar (look below for another entry)
-# this entry is for the bars that are not greater then the max width
+# this entry is for the bars that are not greater than the max width
 # of the grey field ...
 #        $im->string(gdTinyFont,(($xtmp+3),($ytmp),"$entry1",$black));
 # if you want the seconds in the color of the bar just uncomment it (below)
@@ -634,7 +634,7 @@ sub lines {
 
 # print the seconds behind the bar (look below for another entry)
 # here is the seconds printed behind the bar is the bar is too big for 
-# the graph ... (seconds is greater then xhigh ...)
+# the graph ... (seconds is greater than xhigh ...)
         $im->string(gdTinyFont, ($xbegin + ($xhigh*$xverh)+3),($ytmp),"$entry1",$black);
 # if you want the seconds in the color of the bar just uncomment it (below)
 #        $im->string(gdTinyFont, ($xbegin + ($xhigh*$xverh)+3),($ytmp),"$entry1",$colors[$c]);

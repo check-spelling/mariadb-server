@@ -116,7 +116,7 @@ used_buffs_urgent_unlock(TRUNSLOG_USED_BUFFERS *buffs);
   Number of buffers used by loghandler
 
   Should be at least 4, because one thread can block up to 2 buffers in
-  normal circumstances (less then half of one and full other, or just
+  normal circumstances (less than half of one and full other, or just
   switched one and other), But if we met end of the file in the middle and
   have to switch buffer it will be 3.  + 1 buffer for flushing/writing.
   We have a bigger number here for higher concurrency and to make division
@@ -4098,8 +4098,8 @@ my_bool translog_init_with_table(const char *directory,
     Now 'flushed' is set to 'horizon' value, but 'horizon' is (potentially)
     address of the next LSN and we want indicate that all LSNs that are
     already on the disk are flushed so we need decrease horizon on 1 (we are
-    sure that there is no LSN on the disk which is greater then 'flushed'
-    and there will not be LSN created that is equal or less then the value
+    sure that there is no LSN on the disk which is greater than 'flushed'
+    and there will not be LSN created that is equal or less than the value
     of the 'flushed').
   */
   log_descriptor.flushed--; /* offset decreased */
@@ -4519,7 +4519,7 @@ static my_bool translog_write_parts_on_page(TRANSLOG_ADDRESS *horizon,
 
     if (part->length > left)
     {
-      /* we should write less then the current part */
+      /* we should write less than the current part */
       len= left;
       part->length-= len;
       part->str+= len;
@@ -6048,7 +6048,7 @@ translog_write_variable_record_mgroup(LSN *lsn,
 
     /*
        A first non-full page will hold type 0 chunk only if it fit in it with
-       all its headers => the fist page is full or number of groups less then
+       all its headers => the fist page is full or number of groups less than
        possible number of full page.
     */
     limit= (groups_per_page < groups.elements - curr_group ?

@@ -5466,7 +5466,7 @@ TABLE_READ_PLAN *get_best_disjunct_quick(PARAM *param, SEL_IMERGE *imerge,
         add("total_cost", imerge_cost);
   }
 
-  DBUG_PRINT("info",("index_merge total cost: %g (wanted: less then %g)",
+  DBUG_PRINT("info",("index_merge total cost: %g (wanted: less than %g)",
                      imerge_cost, read_time));
   if (imerge_cost < read_time)
   {

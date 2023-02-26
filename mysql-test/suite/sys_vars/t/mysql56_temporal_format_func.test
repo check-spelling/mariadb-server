@@ -13,7 +13,7 @@
 # TIMESTAMP(0-6) also uses the same size in both formats.
 #
 # We use two columns in the tests below, to make sure the record length
-# is longer than 7. Records whose fields occupy less then 7 bytes use
+# is longer than 7. Records whose fields occupy less than 7 bytes use
 # 7 bytes anyway (assuming the default MAX_ROWS values), to store deleted
 # record list pointers.
 #

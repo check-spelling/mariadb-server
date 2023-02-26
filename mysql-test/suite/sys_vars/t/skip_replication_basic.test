@@ -3,7 +3,7 @@
 --error ER_INCORRECT_GLOBAL_LOCAL_VAR
 select @@global.skip_replication;
 
-# Check the variable has a valid numeric value (assumed to be less then 10000)
+# Check the variable has a valid numeric value (assumed to be less than 10000)
 select @@session.skip_replication between 1 and 10000;
 
 --echo should be empty

@@ -302,7 +302,7 @@ end:
 
 /*
   Check for maximum allowable user connections, if the mysqld server is
-  started with corresponding variable that is greater then 0.
+  started with corresponding variable that is greater than 0.
 */
 
 extern "C" uchar *get_key_conn(user_conn *buff, size_t *length,

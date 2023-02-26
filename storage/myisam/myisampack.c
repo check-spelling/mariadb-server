@@ -584,7 +584,7 @@ static int compress(PACK_MRG_INFO *mrg,char *result_table)
   huff_trees=make_huff_trees(huff_counts,trees);
 
   /*
-    If the packed lengths of combined columns is less then the sum of
+    If the packed lengths of combined columns is less than the sum of
     the non-combined columns, then create common Huffman trees for them.
     We do this only for byte compressed columns, not for distinct values
     compressed columns.

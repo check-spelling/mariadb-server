@@ -129,7 +129,7 @@ my_bool maria_multi_threaded= FALSE;
 my_bool maria_in_recovery= FALSE;
 
 /**
-  Control file is less then  512 bytes (a disk sector),
+  Control file is less than  512 bytes (a disk sector),
   to be as atomic as possible
 */
 static int control_file_fd= -1;

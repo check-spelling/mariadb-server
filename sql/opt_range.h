@@ -1994,7 +1994,7 @@ extern String null_string;
 #define SELECTIVITY_SAMPLING_LIMIT 100
 /* but no more then this part of table (10%) */
 #define SELECTIVITY_SAMPLING_SHARE 0.10
-/* do not check if we are going check less then this number of records */
+/* do not check if we are going check less than this number of records */
 #define SELECTIVITY_SAMPLING_THRESHOLD 10
 
 #endif

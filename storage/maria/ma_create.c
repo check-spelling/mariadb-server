@@ -666,7 +666,7 @@ int maria_create(const char *name, enum data_file_type datafile_type,
       share.state.rec_per_key_part[key_segs-1]=1L;
     length+=key_length;
     /*
-      A key can't be longer than than half a index block (as we have
+      A key can't be longer than half a index block (as we have
       to be able to put at least 2 keys on an index block for the key
       algorithms to work).
     */

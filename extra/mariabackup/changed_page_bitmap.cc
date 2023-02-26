@@ -608,7 +608,7 @@ xb_page_bitmap_init(void)
 	if (UNIV_UNLIKELY(bmp_start_lsn > bmp_end_lsn)) {
 
 		msg("mariabackup: incremental backup LSN " LSN_PF
-		    " is larger than than the last checkpoint LSN " LSN_PF
+		    " is larger than the last checkpoint LSN " LSN_PF
 		    , bmp_start_lsn, bmp_end_lsn);
 		return NULL;
 	}

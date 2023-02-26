@@ -8614,7 +8614,7 @@ uint binlog_unsafe_map[256];
 
   It may happen a colision when automatically defining a combination as unsafe.
   For that reason, a combination has its unsafe condition redefined only when
-  the new_condition is greater then the old. For instance,
+  the new_condition is greater than the old. For instance,
   
      . (BINLOG_DIRECT_ON & TRX_CACHE_NOT_EMPTY) is never overwritten by 
      . (BINLOG_DIRECT_ON | BINLOG_DIRECT_OFF).
