@@ -17,7 +17,7 @@ ALTER TABLE mysql.gtid_slave_pos ENGINE=InnoDB;
 START SLAVE 'slave1';
 include/wait_for_slave_to_start.inc
 include/assert.inc [Channel_name will be empty for a worker when it has not processed any transaction]
-include/assert.inc [thread_name should should indicate worker thread.]
+include/assert.inc [thread_name should indicate worker thread.]
 include/assert.inc [Service_State should be "ON" on a fresh slave server.]
 include/assert.inc [Last_Seen_Transaction should show "" if no transaction applierd]
 connection master;

@@ -55,7 +55,7 @@ source include/wait_for_slave_param.inc;
 # To verify the correctness of thread_id field, we check for the name of
 # the thread.
 let $thread_name= `select name from performance_schema.threads where thread_id= (select Thread_Id from performance_schema.replication_applier_status_by_coordinator)`;
-let $assert_text= thread_name should should indicate sql thread.;
+let $assert_text= thread_name should indicate sql thread.;
 let $assert_cond= "$thread_name" = "thread/sql/slave_sql";
 source include/assert.inc;
 
@@ -290,7 +290,7 @@ source include/wait_for_slave_param.inc;
 # To verify the correctness of thread_id field, we check for the name of
 # the thread.
 let $thread_name= `select name from performance_schema.threads where thread_id= (select Thread_Id from performance_schema.replication_applier_status_by_coordinator)`;
-let $assert_text= thread_name should should indicate sql thread.;
+let $assert_text= thread_name should indicate sql thread.;
 let $assert_cond= "$thread_name" = "thread/sql/slave_sql";
 source include/assert.inc;
 
