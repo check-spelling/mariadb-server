@@ -44,7 +44,7 @@ on 1/27/1998 */
 #include "eval0eval.h"
 
 /* Global variable used while parsing a single procedure or query : the code is
-NOT re-entrant */
+NOT reentrant */
 sym_tab_t*	pars_sym_tab_global;
 
 /* Global variables used to denote certain reserved words, used in

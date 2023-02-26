@@ -542,7 +542,7 @@ int ha_oqgraph::open(const char *name, int mode, uint test_if_locked)
   // So, we took a peek inside handler::ha_open() and learned a few things:
   // * this->table is set by handler::ha_open() before calling open().
   //   Note that from this we can only assume that MariaDB knows what it is doing and wont call open() other anything else
-  //   relying on this-0>table, re-entrantly...
+  //   relying on this-0>table, reentrantly...
   // * this->table_share should never be set back to NULL, an assertion checks for this in ha_open() after open()
   // * this->table_share is initialised in the constructor of handler
   // * this->table_share is only otherwise changed by this->change_table_ptr())

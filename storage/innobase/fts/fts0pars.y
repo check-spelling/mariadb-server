@@ -65,7 +65,7 @@ struct fts_lexer_struct {
 	fts_ast_node_t*		node;
 };
 
-/* Enable re-entrant parser */
+/* Enable reentrant parser */
 %pure_parser
 
 %token<oper>	FTS_OPER

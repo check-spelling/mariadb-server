@@ -45,7 +45,7 @@ information */
 extern int	yydebug;
 
 /* Global variable used while parsing a single procedure or query : the code is
-NOT re-entrant */
+NOT reentrant */
 extern sym_tab_t*	pars_sym_tab_global;
 
 extern pars_res_word_t	pars_to_binary_token;

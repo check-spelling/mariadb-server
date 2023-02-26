@@ -3730,7 +3730,7 @@ public:
 
   /**
     Internal parser state.
-    Note that since the parser is not re-entrant, we keep only one parser
+    Note that since the parser is not reentrant, we keep only one parser
     state here. This member is valid only when executing code during parsing.
   */
   Parser_state *m_parser_state;

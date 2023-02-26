@@ -129,7 +129,7 @@ fts_parse_sql(
 		       && fts_table->table->fts->dict_locked);
 
 	if (!dict_locked) {
-		/* The InnoDB SQL parser is not re-entrant. */
+		/* The InnoDB SQL parser is not reentrant. */
 		dict_sys.lock(SRW_LOCK_CALL);
 	}
 
