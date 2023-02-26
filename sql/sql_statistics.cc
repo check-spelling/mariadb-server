@@ -3578,7 +3578,7 @@ int delete_statistics_for_index(THD *thd, TABLE *tab, KEY *key_info,
 
   @details
   The function replaces the name of the table 'tab' from the database 'db' 
-  for 'new_tab' in all all statistical tables: table_stats, column_stats,
+  for 'new_tab' in all statistical tables: table_stats, column_stats,
   index_stats.
 
   @retval
