@@ -450,7 +450,7 @@ the machine supports atomic swap.)
 The above solution with priority inheritance may become actual in the
 future, currently we do not implement any priority twiddling solution.
 Our general aim is to reduce the contention of all mutexes by making
-them more fine grained.
+them more fine-grained.
 
 The thread table contains information of the current status of each
 thread existing in the system, and also the event semaphores used in
