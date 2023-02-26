@@ -82,7 +82,7 @@ private:
 
 /**
   An abstract PERFORMANCE_SCHEMA table.
-  Every table implemented in the performance schema schema and storage engine
+  Every table implemented in the performance schema and storage engine
   derives from this class.
 */
 class PFS_engine_table
