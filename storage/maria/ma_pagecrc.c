@@ -353,7 +353,7 @@ void maria_page_write_failure(int error, PAGECACHE_IO_HOOK_ARGS *args)
 
 
 /**
-  @brief Maria flush log log if needed
+  @brief Maria flush log if needed
 
   @param page            The page data to set
   @param page_no         The page number (<offset>/<page length>)
