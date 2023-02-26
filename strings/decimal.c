@@ -221,7 +221,7 @@ static inline int ROUND_UP(int x)
   SYNOPSIS
     max_decimal()
     precision/scale - see decimal_bin_size() below
-    to              - decimal where where the result will be stored
+    to              - decimal where the result will be stored
                       to->buf and to->len must be set.
 */
 
@@ -781,7 +781,7 @@ int decimal_shift(decimal_t *dec, int shift)
   SYNOPSIS
     internal_str2decl()
       from    - value to convert. Doesn't have to be \0 terminated!
-      to      - decimal where where the result will be stored
+      to      - decimal where the result will be stored
                 to->buf and to->len must be set.
       end     - Pointer to pointer to end of string. Will on return be
 		set to the char after the last used character
