@@ -172,7 +172,7 @@ enum enum_mdl_type {
     cases when we only need to access metadata and not data, e.g. when
     filling an INFORMATION_SCHEMA table.
     Since SH lock is compatible with SNRW lock, the connection that
-    holds SH lock lock should not try to acquire any kind of table-level
+    holds SH lock should not try to acquire any kind of table-level
     or row-level lock, as this can lead to a deadlock. Moreover, after
     acquiring SH lock, the connection should not wait for any other
     resource, as it might cause starvation for X locks and a potential
