@@ -61,7 +61,7 @@ WHERE id < 100
 ORDER BY id;
 
 # Must give injector thread a little time to get update
-# into the binlog other wise we will miss the update.
+# into the binlog otherwise we will miss the update.
 
 sync_slave_with_master;
 --echo --- Check Update on slave ---

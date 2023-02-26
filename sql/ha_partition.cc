@@ -4996,7 +4996,7 @@ void ha_partition::start_part_bulk_insert(THD *thd, uint part_id)
     In case of first partition of when partition function is monotonic
     new buffer size is same as the original buffer size.
     For rest of the partition total buffer of 10*original_size is divided
-    equally if number of partition is more than 10 other wise each partition
+    equally if number of partition is more than 10 otherwise each partition
     will be allowed to use original buffer size.
 */
 long ha_partition::estimate_read_buffer_size(long original_size)
