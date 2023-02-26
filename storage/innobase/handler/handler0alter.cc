@@ -334,7 +334,7 @@ found_nullable:
 					/* The fields for instantly
 					added columns must be placed
 					last in the clustered index.
-					Keep pre-existing fields in
+					Keep preexisting fields in
 					the same position. */
 					uint k;
 					for (k = j + 1; k < index.n_fields;
@@ -1720,7 +1720,7 @@ instant_alter_column_possible(
 		for (; af < end; af++) {
 			const Create_field* cf = cf_it++;
 			if (!(*af)->stored_in_db() || cf->field) {
-				/* Virtual or pre-existing column */
+				/* Virtual or preexisting column */
 				continue;
 			}
 			const bool nullable = (*af)->real_maybe_null();
@@ -1918,7 +1918,7 @@ set_max_size:
 	other functions. */
 
 	/* FIXME: allow instant ADD COLUMN together with
-	INNOBASE_ONLINE_CREATE (ADD [UNIQUE] INDEX) on pre-existing
+	INNOBASE_ONLINE_CREATE (ADD [UNIQUE] INDEX) on preexisting
 	columns. */
 	if (ha_alter_info->handler_flags
 	    & ((INNOBASE_ALTER_REBUILD | INNOBASE_ONLINE_CREATE)
@@ -6945,7 +6945,7 @@ wrong_column_name:
 			DBUG_ASSERT(!col->is_added());
 
 			if (new_field.field) {
-				/* This is a pre-existing column,
+				/* This is a preexisting column,
 				possibly at a different position. */
 			} else if ((*af)->is_real_null()) {
 				/* DEFAULT NULL */

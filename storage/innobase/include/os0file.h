@@ -321,7 +321,7 @@ directory exists already, nothing is done and the call succeeds, unless the
 fail_if_exists arguments is true.
 
 @param[in]	pathname	directory name as null-terminated string
-@param[in]	fail_if_exists	if true, pre-existing directory is treated
+@param[in]	fail_if_exists	if true, preexisting directory is treated
 				as an error.
 @return true if call succeeds, false on error */
 bool

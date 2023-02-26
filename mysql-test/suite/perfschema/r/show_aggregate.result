@@ -284,7 +284,7 @@ localhost	Handler_delete	6	OK
 #
 # STATUS_BY_HOST vs. GLOBAL_STATUS
 #
-# Special case: No way to isolate pre-existing 'localhost' activity, so
+# Special case: No way to isolate preexisting 'localhost' activity, so
 # just check global totals = sum(status_by_host).
 #
 SELECT variable_name, h1, h2, h3, delta, host, IF(host=delta,'OK','ERROR') Expected
@@ -482,7 +482,7 @@ localhost	Handler_delete	6	OK
 #
 # STATUS_BY_HOST vs. GLOBAL_STATUS
 #
-# Special case: No way to isolate pre-existing 'localhost' activity, so
+# Special case: No way to isolate preexisting 'localhost' activity, so
 # just check global totals = sum(status_by_host).
 #
 SELECT variable_name, h1, h2, h3, delta, host, IF(host=delta,'OK','ERROR') Expected

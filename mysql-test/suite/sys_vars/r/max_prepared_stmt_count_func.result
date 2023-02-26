@@ -29,7 +29,7 @@ SHOW STATUS like 'Prepared_stmt_count';
 Variable_name	Value
 Prepared_stmt_count	1
 2 Expected
-'Bug#35389 A pre existing valid prepared statement DROPS if a PREPARE'
+'Bug#35389 A preexisting valid prepared statement DROPS if a PREPARE'
 'STATEMENT command is issued with the same name that'
 'causes ER_MAX_PREPARED_STMT_COUNT_REACHED error'
 '#---------------------FN_DYNVARS_031_03----------------------#'

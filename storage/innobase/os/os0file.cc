@@ -1076,7 +1076,7 @@ the call succeeds, unless the fail_if_exists arguments is true.
 If another error occurs, such as a permission error, this does not crash,
 but reports the error and returns false.
 @param[in]	pathname	directory name as null-terminated string
-@param[in]	fail_if_exists	if true, pre-existing directory is treated as
+@param[in]	fail_if_exists	if true, preexisting directory is treated as
 				an error.
 @return true if call succeeds, false on error */
 bool
@@ -2029,7 +2029,7 @@ the call succeeds, unless the fail_if_exists arguments is true.
 If another error occurs, such as a permission error, this does not crash,
 but reports the error and returns false.
 @param[in]	pathname	directory name as null-terminated string
-@param[in]	fail_if_exists	if true, pre-existing directory is treated
+@param[in]	fail_if_exists	if true, preexisting directory is treated
 				as an error.
 @return true if call succeeds, false on error */
 bool

@@ -295,7 +295,7 @@ namespace Deadlock
         /* Note: Normally, trx should be part of any deadlock cycle
         that is found. However, if innodb_deadlock_detect=OFF had been
         in effect in the past, it is possible that trx will be waiting
-        for a transaction that participates in a pre-existing deadlock
+        for a transaction that participates in a preexisting deadlock
         cycle. In that case, our victim will not be trx. */
         return hare;
       }
@@ -6198,7 +6198,7 @@ namespace Deadlock
     /* Normally, trx should be a direct part of the deadlock
     cycle. However, if innodb_deadlock_detect had been OFF in the
     past, or if current_trx=false, trx may be waiting for a lock that
-    is held by a participant of a pre-existing deadlock, without being
+    is held by a participant of a preexisting deadlock, without being
     part of the deadlock itself. That is, the path to the deadlock may be
     P-shaped instead of O-shaped, with trx being at the foot of the P.
 

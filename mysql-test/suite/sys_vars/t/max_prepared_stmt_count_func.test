@@ -68,7 +68,7 @@ PREPARE stmt  from "SELECT * FROM information_schema.CHARACTER_SETS C";
 
 SHOW STATUS like 'Prepared_stmt_count';
 --echo 2 Expected
---echo 'Bug#35389 A pre existing valid prepared statement DROPS if a PREPARE'
+--echo 'Bug#35389 A preexisting valid prepared statement DROPS if a PREPARE'
 --echo 'STATEMENT command is issued with the same name that'
 --echo 'causes ER_MAX_PREPARED_STMT_COUNT_REACHED error'
 
