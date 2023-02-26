@@ -258,7 +258,7 @@ print "time for select_two_attributes ($count:$rows): " .
     timestr(timediff($end_time, $loop_time),"all") . "\n";
 
 ###
-### Now with elimination: select only only one fact
+### Now with elimination: select only one fact
 ###
 print "testing selection of one attribute\n";
 $loop_time=new Benchmark;
@@ -275,7 +275,7 @@ print "time for select_one_attribute ($count:$rows): " .
     timestr(timediff($end_time, $loop_time),"all") . "\n";
 
 ###
-### Now with elimination: select only only one fact
+### Now with elimination: select only one fact
 ###
 print "testing selection of one attribute\n";
 $loop_time=new Benchmark;
