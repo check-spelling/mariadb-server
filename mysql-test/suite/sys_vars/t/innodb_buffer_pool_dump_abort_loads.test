@@ -47,7 +47,7 @@ INSERT INTO t1 VALUES (@a,@a,@a,@a,@a,
 );
 
 SET GLOBAL innodb_buffer_pool_dump_now=1;
-# Wait for for the dump to complete
+# Wait for the dump to complete
 let $wait_condition =
   SELECT SUBSTR(variable_value, 1, 33) = 'Buffer pool(s) dump completed at '
     FROM information_schema.global_status
@@ -87,7 +87,7 @@ SELECT variable_name, SUBSTR(variable_value, 1, 38) as VALUE
 --echo # Load buffer pool
 SET GLOBAL innodb_buffer_pool_load_now=1;
 
-# Wait for for the load to complete
+# Wait for the load to complete
 let $wait_condition =
   SELECT SUBSTR(variable_value, 1, 33) = 'Buffer pool(s) load completed at '
     FROM information_schema.global_status
@@ -110,7 +110,7 @@ SELECT variable_name, SUBSTR(variable_value, 1, 33) as VALUE
 --echo # innodb_buffer_pool_dump_now=1 should reset the innodb_buffer_pool_load_incomplete status
 
 SET GLOBAL innodb_buffer_pool_dump_now=1;
-# Wait for for the dump to complete
+# Wait for the dump to complete
 let $wait_condition =
   SELECT SUBSTR(variable_value, 1, 33) = 'Buffer pool(s) dump completed at '
     FROM information_schema.global_status
@@ -131,7 +131,7 @@ SELECT variable_name, SUBSTR(variable_value, 1, 33) as VALUE
 --echo # Load buffer pool
 SET GLOBAL innodb_buffer_pool_load_now=1;
 
-# Wait for for the load to complete
+# Wait for the load to complete
 let $wait_condition =
   SELECT SUBSTR(variable_value, 1, 33) = 'Buffer pool(s) load completed at '
     FROM information_schema.global_status

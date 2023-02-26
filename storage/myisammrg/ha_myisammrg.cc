@@ -1736,7 +1736,7 @@ my_bool ha_myisammrg::register_query_cache_dependant_tables(THD *thd
                                                  &db_length);
     (++(*block_table))->n= ++(*n);
     /*
-      There are not callback function for for MyISAM, and engine data
+      There are not callback function for MyISAM, and engine data
     */
     if (!cache->insert_table(thd, key_length, key, (*block_table),
                              db_length, 0,

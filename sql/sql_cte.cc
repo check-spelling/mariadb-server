@@ -273,7 +273,7 @@ bool With_clause::check_dependencies()
   if (dependencies_are_checked)
     return false;
   /* 
-    Look for for definitions with the same query name.
+    Look for definitions with the same query name.
     When found report an error and return true immediately.
     For each table T defined in this with clause look for all other tables
     from the same with clause that are used in the specification of T.

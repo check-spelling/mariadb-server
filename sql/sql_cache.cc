@@ -3413,7 +3413,7 @@ Query_cache::register_tables_from_list(THD *thd, TABLE_LIST *tables_used,
                             tables_used->view_db.str));
       key_length= get_table_def_key(tables_used, &key);
       /*
-        There are not callback function for for VIEWs
+        There are not callback function for VIEWs
       */
       if (!insert_table(thd, key_length, key, (*block_table),
                         tables_used->view_db.length, 0,

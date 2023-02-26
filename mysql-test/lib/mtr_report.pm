@@ -736,7 +736,7 @@ sub mtr_verbose_restart (@) {
 }
 
 
-# Used by --result-file for for formatting times
+# Used by --result-file for formatting times
 
 sub isotime($) {
   my ($sec,$min,$hr,$day,$mon,$yr)= gmtime($_[0]);

@@ -158,7 +158,7 @@ sub q1 { # first question ...
 		print "     LOCK TABLES,CREATE TEMPORARY TABLES)\n";
     print "  6. Create/append full privileges for an existing database\n";
 		print "     and host combination (user has FULL privilege)\n";
-    print "  7. Remove all privileges for for an existing database and\n";
+    print "  7. Remove all privileges for an existing database and\n";
 		print "     host combination.\n";
     print "     (user will have all permission fields set to N)\n";
     print "  0. exit this program\n";

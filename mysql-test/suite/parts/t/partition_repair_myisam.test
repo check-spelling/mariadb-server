@@ -134,7 +134,7 @@ ENGINE=MyISAM
 PARTITION BY HASH (b)
 PARTITIONS 7;
 
-# creating a longer string for for filling the records
+# creating a longer string for filling the records
 let $i= 3;
 let $lt= longtext;
 while ($i)

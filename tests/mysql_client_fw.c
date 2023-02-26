@@ -933,7 +933,7 @@ void fill_tables(const char **query_list, unsigned query_count)
 /*
 All state of fetch from one statement: statement handle, out buffers,
 fetch position.
-See fetch_n for for the only use case.
+See fetch_n for the only use case.
 */
 
 enum { MAX_COLUMN_LENGTH= 255 };

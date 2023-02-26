@@ -610,7 +610,7 @@ c
 4
 4
 # with clause in the specification of a view that whose definition
-# two table aliases for for the same with table
+# two table aliases for the same with table
 create view v4(c,d) as
 with t(c) as (select a from t1 where b >= 'c')
 select * from t r1, t r2 where r1.c=r2.c and r2.c=4;
