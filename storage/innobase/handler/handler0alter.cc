@@ -8803,7 +8803,7 @@ oom:
 }
 
 /** Free the modification log for online table rebuild.
-@param table table that was being rebuilt online */
+@param table that was being rebuilt online */
 static
 void
 innobase_online_rebuild_log_free(

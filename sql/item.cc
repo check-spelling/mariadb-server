@@ -5558,7 +5558,7 @@ resolve_ref_in_select_and_group(THD *thd, Item_ident *ref, SELECT_LEX *select)
   @brief
   Whether a table belongs to an outer select.
 
-  @param table table to check
+  @param table to check
   @param select current select
 
   @details

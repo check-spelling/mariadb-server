@@ -226,7 +226,7 @@ PCOL TDBTBL::InsertSpecialColumn(PCOL scp)
   } // end of InsertSpecialColumn
 
 /***********************************************************************/
-/*  Initializes the table table list.                                  */
+/*  Initializes the table list.                                  */
 /***********************************************************************/
 bool TDBTBL::InitTableList(PGLOBAL g)
   {

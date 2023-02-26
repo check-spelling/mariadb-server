@@ -473,7 +473,7 @@ public:
   }
 
   /** Notify the start of a bulk insert operation
-  @param table table to do bulk operation */
+  @param table to do bulk operation */
   void start_bulk_insert(dict_table_t *table)
   {
     first|= BULK;

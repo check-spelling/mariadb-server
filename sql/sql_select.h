@@ -284,7 +284,7 @@ typedef struct st_join_table {
   st_join_table *first_inner;   /**< first inner table for including outerjoin */
   bool           found;         /**< true after all matches or null complement */
   bool           not_null_compl;/**< true before null complement is added      */
-  st_join_table *last_inner;    /**< last table table for embedding outer join */
+  st_join_table *last_inner;    /**< last table for embedding outer join */
   st_join_table *first_upper;  /**< first inner table for embedding outer join */
   st_join_table *first_unmatched; /**< used for optimization purposes only     */
 

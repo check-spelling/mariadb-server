@@ -632,7 +632,7 @@ rpl_slave_state::record_gtid(THD *thd, const rpl_gtid *gtid, uint64 sub_id,
                          Gtid_log_event::FL_START_ALTER_E1))
   {
     /*
-     store the open table table list in ptr, so that is close_thread_tables
+     store the open table list in ptr, so that is close_thread_tables
      is called start alter tables are not closed
     */
     mysql_mutex_lock(&thd->LOCK_thd_data);

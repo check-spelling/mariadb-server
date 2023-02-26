@@ -684,7 +684,7 @@ struct FetchIndexRootPages : public AbstractCallback {
 
 	/** Constructor
 	@param trx covering (user) transaction
-	@param table table definition in server .*/
+	@param table definition in server .*/
 	FetchIndexRootPages(const dict_table_t* table, trx_t* trx)
 		:
 		AbstractCallback(trx, UINT32_MAX),
