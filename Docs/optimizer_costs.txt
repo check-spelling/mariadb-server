@@ -614,7 +614,7 @@ InnoDB, TABLE SCAN
 select sum(l_quantity) from check_costs_innodb;
 table_scan 131.302492
 Note that InnoDB reported only 956356 rows instead of 100000 in stats.records
-This will will cause the optimizer to calculate the costs based on wrong
+This will cause the optimizer to calculate the costs based on wrong
 assumptions.
 
 As InnoDB have a clustered index (which cost is a combination of
