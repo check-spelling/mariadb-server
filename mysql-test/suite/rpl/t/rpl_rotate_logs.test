@@ -186,7 +186,7 @@ sync_slave_with_master;
 # Bug #29420: crash with show and purge binlogs
 #
 --error 1220
-show binlog events in 'non existing_binlog_file';
+show binlog events in 'nonexistent_binlog_file';
 purge master logs before now();
 --error 1220
 show binlog events in '';

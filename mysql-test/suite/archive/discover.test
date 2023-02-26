@@ -133,7 +133,7 @@ create table t1 (a int) engine=archive;
 drop table t1;
 
 #
-# MDEV-11317: Error in deleting non existing .frm for tables with disocvery
+# MDEV-11317: Error in deleting nonexistent .frm for tables with disocvery
 #
 
 CREATE OR REPLACE TABLE t1 ( pk INT AUTO_INCREMENT PRIMARY KEY ) ENGINE = ARCHIVE;

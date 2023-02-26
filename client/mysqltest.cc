@@ -3395,7 +3395,7 @@ void do_exec(struct st_command *command)
   /* Replace /dev/null with NUL */
   while(replace(&ds_cmd, "/dev/null", 9, "NUL", 3) == 0)
     ;
-  /* Replace "closed stdout" with non existing output fd */
+  /* Replace "closed stdout" with nonexistent output fd */
   while(replace(&ds_cmd, ">&-", 3, ">&4", 3) == 0)
     ;
 #endif

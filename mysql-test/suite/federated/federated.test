@@ -10,7 +10,7 @@ CREATE TABLE t1 (a INT) ENGINE=FEDERATED CONNECTION='non_existing';
 SHOW WARNINGS;
 
 #
-# MDEV-4468 Assertion `error != 0' fails or timeout occurs on select from a FEDERATED table which points at a non-existent table
+# MDEV-4468 Assertion `error != 0' fails or timeout occurs on select from a FEDERATED table which points at a nonexistent table
 #
 
 create table t1 (a int);

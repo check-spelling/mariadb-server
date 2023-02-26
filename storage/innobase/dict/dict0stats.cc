@@ -54,7 +54,7 @@ Definition: N-prefix-boring record is a record on a non-leaf page that equals
 the next (to the right, cross page boundaries, skipping the supremum and
 infimum) record on the same level when looking at the fist n-prefix columns.
 The last (user) record on a level is not boring (it does not match the
-non-existent user record to the right). We call the records boring because all
+nonexistent user record to the right). We call the records boring because all
 the records on the page below a boring record are equal to that boring record.
 
 We avoid diving below boring records when searching for a leaf page to

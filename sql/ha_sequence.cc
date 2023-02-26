@@ -401,7 +401,7 @@ static handler *sequence_create_handler(handlerton *hton,
   if (unlikely(!share))
   {
     /*
-      This can happen if we call get_new_handler with a non existing share
+      This can happen if we call get_new_handler with a nonexistent share
     */
     DBUG_RETURN(0);
   }

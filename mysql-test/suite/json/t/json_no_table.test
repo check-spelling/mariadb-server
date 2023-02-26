@@ -257,7 +257,7 @@ select json_length( '[ 1, [ 2, 3, 4 ], 5 ]', '$[2]' );
 select json_length( '[ 1, [ 2, 3, 4 ], 5 ]', '$[2][0]' ); # auto-wrap scalar
 select json_length( '[ 1, [ 2, 3, 4 ], {"a": 1} ]', '$[2][0]' ); # ditto object
 
-# non-existent path: null
+# nonexistent path: null
 select json_length( '[ 1, [ 2, 3, 4 ], 5 ]', '$[2][1]' );
 # 3
 select json_length( '[ 1, { "a": true, "b": false, "c": null }, 5 ]', '$[1]' );

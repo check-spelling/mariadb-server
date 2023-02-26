@@ -3,7 +3,7 @@
 #   This test ensures that a binlogged Query_log_event which failed on the
 # primary server does not break replication if it is ignored by Grant_tables
 # on the replica. The bug reported by MDEV-28530 shows this with
-# REVOKE ALL PRIVILEGES.. using a non-existent user. The primary will binlog
+# REVOKE ALL PRIVILEGES.. using a nonexistent user. The primary will binlog
 # the REVOKE command with an error code, and the replica will think the command
 # executed with success because the replication filter will ignore the command
 # while accessing the Grant_tables classes. When the replica performs an error
@@ -12,7 +12,7 @@
 #
 # Methodology:
 #   Using a replica configured with replicate_wild_ignore_table="schema.%",
-# on the primary, execute REVOKE ALL PRVILEGES using a non-existent user and
+# on the primary, execute REVOKE ALL PRVILEGES using a nonexistent user and
 # DROP USER using a list of users where not all users exist, and ensure that
 # the replica acknowledges and ignores the events without erroring.
 #
@@ -34,7 +34,7 @@ source include/start_slave.inc;
 
 
 --echo #
---echo # Trying to execute REVOKE ALL PRIVILEGES on a non-existent user and
+--echo # Trying to execute REVOKE ALL PRIVILEGES on a nonexistent user and
 --echo # DROP USER on a list of users where not all users exist should error
 --echo # and be written into the binary log
 --connection master

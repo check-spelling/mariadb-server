@@ -307,7 +307,7 @@ let $message= Testcase 3.5.1.8:;
 	--enable_warnings
 
 #Section 3.5.1.9
-#Testcase:  Ensure that a reference to a non-existent trigger is rejected with
+#Testcase:  Ensure that a reference to a nonexistent trigger is rejected with
 #           an appropriate error message.
 let $message= Testcase 3.5.1.9:(cannot be inplemented at this point);
 --source include/show_msg.inc

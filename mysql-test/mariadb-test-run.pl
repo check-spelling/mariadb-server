@@ -2121,7 +2121,7 @@ sub environment_setup {
   #
   # Some stupid^H^H^H^H^H^Hignorant network providers set up "wildcard DNS"
   # servers that return some given web server address for any lookup of a
-  # non-existent host name. This confuses test cases that want to test the
+  # nonexistent host name. This confuses test cases that want to test the
   # behaviour when connecting to a non-existing host, so we need to be able
   # to disable those tests when DNS is broken.
   #
@@ -5637,7 +5637,7 @@ sub start_mysqltest ($) {
   {
     mtr_add_arg($args, "--record");
 
-    # When recording to a non existing result file
+    # When recording to a nonexistent result file
     # the name of that file is in "record_file"
     if ( defined $tinfo->{'record_file'} ) {
       mtr_add_arg($args, "--result-file=%s", $tinfo->{record_file});

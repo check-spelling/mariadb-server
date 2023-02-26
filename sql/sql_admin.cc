@@ -653,7 +653,7 @@ static bool mysql_admin_table(THD* thd, TABLE_LIST* tables,
           {
             char buff[FN_REFLEN + MYSQL_ERRMSG_SIZE];
             size_t length;
-            DBUG_PRINT("admin", ("sending non existent partition error"));
+            DBUG_PRINT("admin", ("sending nonexistent partition error"));
             protocol->prepare_for_resend();
             protocol->store(&table_name, system_charset_info);
             protocol->store(operator_name, system_charset_info);

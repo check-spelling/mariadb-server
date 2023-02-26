@@ -10,11 +10,11 @@
 #
 #-  1. Ensure that the definition of a procedure is properly recorded and displayed when a SHOW CREATE PROCEDURE or SHOW CREATE PROCEDURE STATUS statement is executed.
 #-  2. Ensure that the definition of a procedure is not displayed when a SHOW CREATE FUNCTION or SHOW CREATE FUNCTION STATUS statement is executed.
-#-  3. Ensure that an attempt to execute SHOW CREATE PROCEDURE or SHOW CREATE PROCEDURE STATUS, with the name of a non-existent procedure, fails with an appropriate error message.
+#-  3. Ensure that an attempt to execute SHOW CREATE PROCEDURE or SHOW CREATE PROCEDURE STATUS, with the name of a nonexistent procedure, fails with an appropriate error message.
 #-  4. Ensure that an attempt to execute SHOW CREATE PROCEDURE or SHOW CREATE PROCEDURE STATUS, with the name of a function, fails with an appropriate error message.
 #-  5. Ensure that the definition of a function is properly recorded and displayed when a SHOW CREATE FUNCTION or SHOW CREATE FUNCTION STATUS statement is executed.
 #-  6. Ensure that the definition of a function is not displayed when a SHOW CREATE PROCEDURE or SHOW CREATE PROCEDURE STATUS statement is executed.
-#-  7. Ensure that an attempt to execute SHOW CREATE FUNCTION or SHOW CREATE FUNCTION STATUS, with the name of a non-existent function, fails with an appropriate error message.
+#-  7. Ensure that an attempt to execute SHOW CREATE FUNCTION or SHOW CREATE FUNCTION STATUS, with the name of a nonexistent function, fails with an appropriate error message.
 #-  8. Ensure that an attempt to execute SHOW CREATE FUNCTION or SHOW CREATE FUNCTION STATUS, with the name of a procedure, fails with an appropriate error message.
 ##  9. Ensure that all stored procedure changes made with ALTER PROCEDURE or ALTER FUNCTION are properly recorded and displayed when a SHOW CREATE PROCEDURE or SHOW CREATE PROCEDURE STATUS statement, or a SHOW CREATE FUNCTION or SHOW CREATE FUNCTION STATUS statement (respectively) is executed.
 #- 10. Ensure that, when a stored procedure is dropped, its definition no longer appears when a SHOW CREATE PROCEDURE or SHOW CREATE PROCEDURE STATUS statement, or a SHOW CREATE FUNCTION or SHOW CREATE FUNCTION STATUS statement (respectively) is executed.

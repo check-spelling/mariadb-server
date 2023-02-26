@@ -7739,7 +7739,7 @@ Field_string::unpack(uchar *to, const uchar *from, const uchar *from_end,
    with the real type.  Since all allowable types have 0xF as most
    significant bits of the metadata word, lengths <256 will not affect
    the real type at all, while all other values will result in a
-   non-existent type in the range 17-244.
+   nonexistent type in the range 17-244.
 
    @see Field_string::unpack
 

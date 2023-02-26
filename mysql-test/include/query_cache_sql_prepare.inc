@@ -430,7 +430,7 @@ EXECUTE stmt_c_1;
 --echo
 SELECT DATABASE(), @@collation_database;
 
-# -- Here we have: current db: NULL; stmt db: mysqltest2 (non-existent);
+# -- Here we have: current db: NULL; stmt db: mysqltest2 (nonexistent);
 --echo
 EXECUTE stmt_c_2;
 
@@ -449,7 +449,7 @@ EXECUTE stmt_c_3;
 --echo
 use mysqltest1;
 
-# -- Here we have: current db: mysqltest1; stmt db: mysqltest2 (non-existent);
+# -- Here we have: current db: mysqltest1; stmt db: mysqltest2 (nonexistent);
 --echo
 EXECUTE stmt_c_2;
 

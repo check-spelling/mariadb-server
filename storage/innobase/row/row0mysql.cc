@@ -2321,7 +2321,7 @@ row_discard_tablespace(
 	dberr_t err;
 
 	/* How do we prevent crashes caused by ongoing operations on
-	the table? Old operations could try to access non-existent
+	the table? Old operations could try to access nonexistent
 	pages. The SQL layer will block all DML on the table using MDL and a
 	DISCARD will not start unless all existing operations on the
 	table to be discarded are completed.

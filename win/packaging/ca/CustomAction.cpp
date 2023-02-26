@@ -238,7 +238,7 @@ extern "C" UINT __stdcall CheckDataDirectory(MSIHANDLE hInstall)
   WcaLog(LOGMSG_STANDARD, "Checking files in %S", datadir);
   empty= IsDirectoryEmptyOrNonExisting(datadir);
   if (empty)
-    WcaLog(LOGMSG_STANDARD, "DATADIR is empty or non-existent");
+    WcaLog(LOGMSG_STANDARD, "DATADIR is empty or nonexistent");
   else
     WcaLog(LOGMSG_STANDARD, "DATADIR is NOT empty");
 

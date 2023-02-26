@@ -497,7 +497,7 @@ bool reload_acl_and_cache(THD *thd, unsigned long long options,
 
   Differences from FLUSH TABLES <list>
   -------------------------------------
-  - you can't flush WITH READ LOCK a non-existent table
+  - you can't flush WITH READ LOCK a nonexistent table
   - you can't flush WITH READ LOCK under LOCK TABLES
 
   Effect on views and temporary tables.

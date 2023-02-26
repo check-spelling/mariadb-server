@@ -207,7 +207,7 @@ flag is cleared and the x-lock released by an i/o-handler thread.
 @param[in,out] chain	buf_pool.page_hash cell for page_id
 @param[out] err		DB_SUCCESS or DB_TABLESPACE_DELETED
 			if we are trying
-			to read from a non-existent tablespace
+			to read from a nonexistent tablespace
 @param[in,out] space	tablespace
 @param[in,out] block	preallocated buffer block
 @param[in] sync		true if synchronous aio is desired

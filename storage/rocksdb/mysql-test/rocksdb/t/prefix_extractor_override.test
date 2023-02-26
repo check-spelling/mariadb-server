@@ -42,7 +42,7 @@ SET @@global.rocksdb_update_cf_options = 'cf1={prefix_extractor=capped:26};';
 # Restart no longer needed
 SELECT * FROM information_schema.rocksdb_cf_options WHERE option_type like '%prefix_extractor%';
 
-# set cf_options for non-existent cf2, cf2 should be created automatically
+# set cf_options for nonexistent cf2, cf2 should be created automatically
 SET @@global.rocksdb_update_cf_options = 'cf2={prefix_extractor=capped:28};';
 SELECT * FROM information_schema.rocksdb_cf_options WHERE option_type like '%prefix_extractor%';
 

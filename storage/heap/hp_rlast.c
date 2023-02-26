@@ -49,7 +49,7 @@ int heap_rlast(HP_INFO *info, uchar *record, int inx)
   }
   else
   {
-    /* We can't scan a non existing key value with hash index */
+    /* We can't scan a nonexistent key value with hash index */
     my_errno= HA_ERR_WRONG_COMMAND;
     DBUG_RETURN(my_errno);
   }

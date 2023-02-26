@@ -50,7 +50,7 @@
 #       + heavy use of sourced scripts) of the following tests, there will be
 #       - no abort of the test execution, when one statements gets an return
 #         code != 0 (The sub testcases are independend.)
-#         But statements, which do not make sense like SELECT on non existent
+#         But statements, which do not make sense like SELECT on nonexistent
 #         VIEW will be omitted. This decreases the amount of useless output.
 #       - a file with expected results, which might contain incorrect server
 #         responses

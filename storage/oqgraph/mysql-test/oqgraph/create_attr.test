@@ -69,7 +69,7 @@ CREATE TABLE oqtable ( latch varchar(32) NULL, origid BIGINT UNSIGNED NULL, dest
 --error 1296
 DESCRIBE oqtable;
 
-# non-existent table reference
+# nonexistent table reference
 --disable_warnings
 DROP TABLE IF EXISTS oqtable;
 --enable_warnings

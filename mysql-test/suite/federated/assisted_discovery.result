@@ -74,7 +74,7 @@ drop table t1;
 connection slave;
 drop table t1;
 #
-# MDEV-17227 Server crash in TABLE_SHARE::init_from_sql_statement_string upon table discovery with non-existent database
+# MDEV-17227 Server crash in TABLE_SHARE::init_from_sql_statement_string upon table discovery with nonexistent database
 #
 connection master;
 create table t1 engine=federated connection='mysql://root@127.0.0.1:$SLAVE_MYPORT/test/t1';

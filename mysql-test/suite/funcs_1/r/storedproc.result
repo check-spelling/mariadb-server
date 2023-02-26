@@ -3405,7 +3405,7 @@ return f1' at line 1
 
 Testcase 4.1.16:
 ----------------
-Ensure that a reference to a non-existent stored procedure is rejected with an
+Ensure that a reference to a nonexistent stored procedure is rejected with an
 appropriate error message
 --------------------------------------------------------------------------------
 DROP PROCEDURE IF EXISTS sp16;

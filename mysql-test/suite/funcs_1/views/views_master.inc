@@ -619,7 +619,7 @@ Drop view if exists test.procedure ;
 let $message= Testcase 3.3.1.9 ;
 --source include/show_msg80.inc
 ###############################################################################
-# Testcase 3.3.1.9: Ensure that a reference to a non-existent view is rejected
+# Testcase 3.3.1.9: Ensure that a reference to a nonexistent view is rejected
 #                   with an appropriate error message
 ###############################################################################
 # Note(mleich): The SELECT statement syntax does not contain any functionality
@@ -1055,10 +1055,10 @@ let $message= Testcase 3.3.1.23 + 3.3.1.24 ;
 --source include/show_msg80.inc
 ###############################################################################
 # Testcase 3.3.1.23: Ensure that a view definition that includes a reference to
-#                    a non-existent table fails, with an appropriate error
+#                    a nonexistent table fails, with an appropriate error
 #                    message, at creation time.
 # Testcase 3.3.1.24: Ensure that a view definition that includes a reference to
-#                    a non-existent view fails, with an appropriate error
+#                    a nonexistent view fails, with an appropriate error
 #                    message, at creation time.
 ###############################################################################
 # Note(mleich): The SELECT statement syntax does not contain any functionality

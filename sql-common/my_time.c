@@ -1392,7 +1392,7 @@ my_system_gmt_sec(const MYSQL_TIME *t_src, long *my_timezone, uint *error_code)
     l_time=&tm_tmp;
   }
   /*
-    Fix that if we are in the non existing daylight saving time hour
+    Fix that if we are in the nonexistent daylight saving time hour
     we move the start of the next real hour.
 
     This code doesn't handle such exotical thing as time-gaps whose length

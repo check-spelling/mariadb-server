@@ -2957,7 +2957,7 @@ main(int argc, char **argv)
   tmp.tm_year= 103; tmp.tm_mon= 8; tmp.tm_mday= 1;
   tmp.tm_hour= 0; tmp.tm_min= 0; tmp.tm_sec= 0; tmp.tm_isdst= 0;
   t= mktime(&tmp);
-  printf("mktime returns %s for non existing date (%d)\n",
+  printf("mktime returns %s for nonexistent date (%d)\n",
          (t != (time_t)-1 ? "something" : "error"), (int)t);
 
   tmp.tm_year= 103; tmp.tm_mon= 8; tmp.tm_mday= 1;

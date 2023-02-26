@@ -239,7 +239,7 @@ let $message= Testcase 3.5.5:;
 	use test;
 
 #Section 3.5.5.1
-# Test case: Ensure that, if CREATE TRIGGER is executed with a non-existent
+# Test case: Ensure that, if CREATE TRIGGER is executed with a nonexistent
 #            subject table, the statement fails with an appropriate error message.
 let $message= Testcase 3.5.5.1:;
 --source include/show_msg.inc

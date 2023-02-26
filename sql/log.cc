@@ -4515,7 +4515,7 @@ bool MYSQL_BIN_LOG::reset_logs(THD *thd, bool create_new_log,
     First delete all old log files and then update the index file.
     As we first delete the log files and do not use sort of logging,
     a crash may lead to an inconsistent state where the index has
-    references to non-existent files.
+    references to nonexistent files.
 
     We need to invert the steps and use the purge_index_file methods
     in order to make the operation safe.

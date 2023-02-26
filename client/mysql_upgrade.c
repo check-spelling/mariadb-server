@@ -834,7 +834,7 @@ static int upgrade_already_done(int silent)
   if (!length)
   {
     if (opt_verbose)
-      verbose("Empty or non existent %s. Assuming mysql_upgrade has to be run!",
+      verbose("Empty or nonexistent %s. Assuming mysql_upgrade has to be run!",
               upgrade_info_file);
     return 1;
   }

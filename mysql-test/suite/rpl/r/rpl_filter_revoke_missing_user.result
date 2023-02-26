@@ -7,7 +7,7 @@ include/stop_slave.inc
 SET @@GLOBAL.replicate_wild_ignore_table="mysql.%";
 include/start_slave.inc
 #
-# Trying to execute REVOKE ALL PRIVILEGES on a non-existent user and
+# Trying to execute REVOKE ALL PRIVILEGES on a nonexistent user and
 # DROP USER on a list of users where not all users exist should error
 # and be written into the binary log
 connection master;

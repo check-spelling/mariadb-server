@@ -9372,7 +9372,7 @@ SEL_ARG *Field::stored_field_make_mm_leaf_exact(RANGE_OPT_PARAM *param,
 /******************************************************************************
 ** Tree manipulation functions
 ** If tree is 0 it means that the condition can't be tested. It refers
-** to a non existent table or to a field in current table with isn't a key.
+** to a nonexistent table or to a field in current table with isn't a key.
 ** The different tree flags:
 ** IMPOSSIBLE:	 Condition is never TRUE
 ** ALWAYS:	 Condition is always TRUE

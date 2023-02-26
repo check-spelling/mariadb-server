@@ -706,7 +706,7 @@ Event_db_repository::create_event(THD *thd, Event_parse_data *parse_data,
   } else
     *event_already_exists= false;
 
-  DBUG_PRINT("info", ("non-existent, go forward"));
+  DBUG_PRINT("info", ("nonexistent, go forward"));
 
   restore_record(table, s->default_values);     // Get default values for fields
 

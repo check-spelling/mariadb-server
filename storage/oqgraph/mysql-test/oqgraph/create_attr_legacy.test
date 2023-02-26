@@ -49,7 +49,7 @@ CREATE TABLE oqtable ( latch SMALLINT UNSIGNED NULL, origid BIGINT UNSIGNED NULL
 --error 1296
 DESCRIBE oqtable;
 
-# non-existent table reference
+# nonexistent table reference
 --disable_warnings
 DROP TABLE IF EXISTS oqtable;
 --enable_warnings

@@ -51,7 +51,7 @@ connection slave;
 drop table t1;
 
 --echo #
---echo # MDEV-17227 Server crash in TABLE_SHARE::init_from_sql_statement_string upon table discovery with non-existent database
+--echo # MDEV-17227 Server crash in TABLE_SHARE::init_from_sql_statement_string upon table discovery with nonexistent database
 --echo #
 connection master;
 --error ER_CONNECT_TO_FOREIGN_DATA_SOURCE

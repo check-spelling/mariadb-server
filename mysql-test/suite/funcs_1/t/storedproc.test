@@ -2470,7 +2470,7 @@ CREATE FUNCTION fn1(f1 set(f1 "1set", "2set") ) returns set("1set", "2set")
 # ------------------------------------------------------------------------------
 let $message= Testcase 4.1.16:
               ----------------
-Ensure that a reference to a non-existent stored procedure is rejected with an
+Ensure that a reference to a nonexistent stored procedure is rejected with an
 appropriate error message;
 --source include/show_msg80.inc
 
