@@ -889,7 +889,7 @@ sub collect_one_test_case {
     # Now we find a result file for every test file. It's a bit complicated.
     # For a test foobar.test in the combination pair {aa,bb}, and in the
     # overlay "rty" to the suite "qwe", in other words, for the
-    # that that mtr prints as
+    # that mtr prints as
     #   ...
     #   qwe-rty.foobar                   'aa,bb'  [ pass ]
     #   ...
