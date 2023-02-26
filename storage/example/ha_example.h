@@ -201,50 +201,50 @@ public:
 
   /** @brief
     We implement this in ha_example.cc. It's not an obligatory method;
-    skip it and and MySQL will treat it as not implemented.
+    skip it and MySQL will treat it as not implemented.
   */
   int write_row(const uchar *buf);
 
   /** @brief
     We implement this in ha_example.cc. It's not an obligatory method;
-    skip it and and MySQL will treat it as not implemented.
+    skip it and MySQL will treat it as not implemented.
   */
   int update_row(const uchar *old_data, const uchar *new_data);
 
   /** @brief
     We implement this in ha_example.cc. It's not an obligatory method;
-    skip it and and MySQL will treat it as not implemented.
+    skip it and MySQL will treat it as not implemented.
   */
   int delete_row(const uchar *buf);
 
   /** @brief
     We implement this in ha_example.cc. It's not an obligatory method;
-    skip it and and MySQL will treat it as not implemented.
+    skip it and MySQL will treat it as not implemented.
   */
   int index_read_map(uchar *buf, const uchar *key,
                      key_part_map keypart_map, enum ha_rkey_function find_flag);
 
   /** @brief
     We implement this in ha_example.cc. It's not an obligatory method;
-    skip it and and MySQL will treat it as not implemented.
+    skip it and MySQL will treat it as not implemented.
   */
   int index_next(uchar *buf);
 
   /** @brief
     We implement this in ha_example.cc. It's not an obligatory method;
-    skip it and and MySQL will treat it as not implemented.
+    skip it and MySQL will treat it as not implemented.
   */
   int index_prev(uchar *buf);
 
   /** @brief
     We implement this in ha_example.cc. It's not an obligatory method;
-    skip it and and MySQL will treat it as not implemented.
+    skip it and MySQL will treat it as not implemented.
   */
   int index_first(uchar *buf);
 
   /** @brief
     We implement this in ha_example.cc. It's not an obligatory method;
-    skip it and and MySQL will treat it as not implemented.
+    skip it and MySQL will treat it as not implemented.
   */
   int index_last(uchar *buf);
 

@@ -765,7 +765,7 @@ int SEL_IMERGE::or_sel_tree_with_checks(RANGE_OPT_PARAM *param,
 
 
 /*
-  Perform OR operation on this imerge and and another imerge
+  Perform OR operation on this imerge and another imerge
 
   SYNOPSIS
     or_sel_imerge_with_checks()
