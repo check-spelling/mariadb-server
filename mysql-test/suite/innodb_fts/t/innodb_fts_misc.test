@@ -1179,7 +1179,7 @@ ENGINE = InnoDB;
 
 insert into t1 (content)
 values
-('This is a story which has has a complicated phrase structure here in the
+('This is a story which has a complicated phrase structure here in the
 middle'),
 ('This is a story which doesn''t have that text'),
 ('This is a story that has complicated the phrase structure');

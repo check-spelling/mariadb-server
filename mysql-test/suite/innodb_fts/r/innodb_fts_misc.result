@@ -1208,7 +1208,7 @@ FULLTEXT INDEX `IDX_CONTEXT_FULLTEXT`(`content`)
 ENGINE = InnoDB;
 insert into t1 (content)
 values
-('This is a story which has has a complicated phrase structure here in the
+('This is a story which has a complicated phrase structure here in the
 middle'),
 ('This is a story which doesn''t have that text'),
 ('This is a story that has complicated the phrase structure');
@@ -1216,13 +1216,13 @@ select * from t1
 where match(content) against('"complicated phrase structure"' in boolean
 mode);
 id	content
-1	This is a story which has has a complicated phrase structure here in the
+1	This is a story which has a complicated phrase structure here in the
 middle
 select * from t1
 where match(content) against('+"complicated phrase structure"' in boolean
 mode);
 id	content
-1	This is a story which has has a complicated phrase structure here in the
+1	This is a story which has a complicated phrase structure here in the
 middle
 select * from t1
 where match(content) against('"complicated the phrase structure"' in boolean
