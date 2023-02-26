@@ -57,7 +57,7 @@ SET GLOBAL slave_parallel_mode='optimistic';
 #   In the bug condition it would stop prematurely having the stop position
 #   in the first file, therefore trx2 not committed.
 # Specifically, an internal transaction position until makes the applier to run
-# beyond it to commit commit the current transaction.
+# beyond it to commit the current transaction.
 # *Proof 2*
 # Observe the following START SLAVE resumes OK.
 #
