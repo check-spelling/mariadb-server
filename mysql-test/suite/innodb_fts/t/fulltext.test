@@ -426,7 +426,7 @@ DROP TABLE t1;
 #
 CREATE TABLE t1 (a VARCHAR(255), FULLTEXT(a)) ENGINE = InnoDB;
 SELECT * FROM t1 IGNORE INDEX(a) WHERE MATCH(a) AGAINST('test');
-# INNODB_FTS: InnoDB do have have this option (disable keys)
+# INNODB_FTS: InnoDB do have this option (disable keys)
 # ALTER TABLE t1 DISABLE KEYS;
 # --error 1191
 SELECT * FROM t1 WHERE MATCH(a) AGAINST('test');

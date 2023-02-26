@@ -164,7 +164,7 @@ bool has_proxy_protocol_header(NET *net)
   https://www.haproxy.org/download/1.8/doc/proxy-protocol.txt
 
   Whenever this function is called, client is connecting, and
-  we have have pre-read 4 bytes (NET_HEADER_SIZE)  from the network already.
+  we have pre-read 4 bytes (NET_HEADER_SIZE)  from the network already.
   These 4 bytes did not match MySQL packet header, and (unless the client
   is buggy), those bytes must be proxy header.
 
