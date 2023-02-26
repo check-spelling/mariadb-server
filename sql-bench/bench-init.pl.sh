@@ -498,7 +498,7 @@ All benchmarks takes the following options:
 
 --loop-count (Default $opt_loop_count)
   This is a test specific option that is only used when debugging a test.
-  This usually means how many times times each test loop is executed.
+  This usually means how many times each test loop is executed.
 
 --help
   Shows this help
