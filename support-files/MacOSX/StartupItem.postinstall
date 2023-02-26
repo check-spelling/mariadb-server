@@ -23,7 +23,7 @@
 #
 # - On Mac OS X Server, it disables the startup of the default MySQL
 #   installation by changing the "MYSQL" start variable to "-NO-".
-# - If not existent already, it adds a "MYSQLCOM" start variable, which
+# - If not already extant, it adds a "MYSQLCOM" start variable, which
 #   defaults to "-YES-". An already existing MYSQLCOM variable will remain
 #   untouched.
 #
