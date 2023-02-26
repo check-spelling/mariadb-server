@@ -257,7 +257,7 @@ typedef struct st_mysql_cond mysql_cond_t;
   is sometime used when it is not needed, which in turn cause link failures
   on some platforms.
   The proper fix would be to cut these extra dependencies in the calling code.
-  DISABLE_MYSQL_THREAD_H is a work around to limit dependencies.
+  DISABLE_MYSQL_THREAD_H is a workaround to limit dependencies.
   DISABLE_MYSQL_PRLOCK_H is similar, and is used to disable specifically
   the prlock wrappers.
 */

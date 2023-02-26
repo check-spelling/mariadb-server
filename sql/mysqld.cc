@@ -4051,7 +4051,7 @@ static int init_common_variables()
     The default-storage-engine entry in my_long_options should have a
     non-null default value. It was earlier intialized as
     (longlong)"MyISAM" in my_long_options but this triggered a
-    compiler error in the Sun Studio 12 compiler. As a work-around we
+    compiler error in the Sun Studio 12 compiler. As a workaround we
     set the def_value member to 0 in my_long_options and initialize it
     to the correct value here.
 
