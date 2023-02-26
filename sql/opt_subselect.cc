@@ -164,7 +164,7 @@
   3.2.1 Non-merged semi-joins and join optimization
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   For join optimization purposes, non-merged semi-join nests are similar to
-  base tables. Each such nest is represented by one one JOIN_TAB, which has 
+  base tables. Each such nest is represented by one JOIN_TAB, which has 
   two possible access strategies:
    - full table scan (representing SJ-Materialization-Scan strategy)
    - eq_ref-like table lookup (representing SJ-Materialization-Lookup)
