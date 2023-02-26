@@ -2,7 +2,7 @@
 
 #
 # BUG#5551 "Failed OPTIMIZE TABLE is logged to binary log"
-# Replication should work when when OPTIMIZE TABLE is 
+# Replication should work when OPTIMIZE TABLE is 
 # executed on a non-existing table.
 #
 # Due to patch for BUG#989, checking that an OPTIMIZE
