@@ -1990,7 +1990,7 @@ void THD::disconnect()
 
 #ifdef SIGNAL_WITH_VIO_CLOSE
   /*
-    Since an active vio might might have not been set yet, in
+    Since an active vio might have not been set yet, in
     any case save a reference to avoid closing a inexistent
     one or closing the vio twice if there is a active one.
   */
