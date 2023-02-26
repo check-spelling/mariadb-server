@@ -326,7 +326,7 @@ HANDLE create_named_pipe(MYSQL *mysql, uint connect_timeout, char **arg_host,
                                host, unix_socket, (ulong) GetLastError());
       return INVALID_HANDLE_VALUE;
     }
-    /* wait for for an other instance */
+    /* wait for for another instance */
     if (! WaitNamedPipe(pipe_name, connect_timeout*1000) )
     {
       set_mysql_extended_error(mysql, CR_NAMEDPIPEWAIT_ERROR, unknown_sqlstate,

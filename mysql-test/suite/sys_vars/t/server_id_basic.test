@@ -170,7 +170,7 @@ SELECT server_id;
 
 SELECT @@server_id;
 
-#verifying another another syntax for setting value
+#verifying another syntax for setting value
 SET global server_id = 99;
 
 ####################################

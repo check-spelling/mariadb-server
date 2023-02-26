@@ -168,7 +168,7 @@ SELECT slave_net_timeout;
 
 SELECT @@slave_net_timeout;
 
-#verifying another another syntax for setting value
+#verifying another syntax for setting value
 SET global slave_net_timeout = 99;
 
 ####################################

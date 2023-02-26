@@ -175,7 +175,7 @@ SELECT slave_transaction_retry_interval;
 
 SELECT @@slave_transaction_retry_interval;
 
-#verifying another another syntax for setting value
+#verifying another syntax for setting value
 SET global slave_transaction_retry_interval = 99;
 
 ####################################
