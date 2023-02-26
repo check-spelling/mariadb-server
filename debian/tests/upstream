@@ -41,7 +41,7 @@ main.ctype_uca : Requires writable /usr
 rpl.rpl_gtid_mode : Requires starting server as root ref http://bugs.mysql.com/bug.php?id=70517
 EOF
 
-# Skip tests that cannot run properly on Gitlab-CI
+# Skip tests that cannot run properly on GitLab-CI
 if [ ! -z "$GITLAB_CI" ]
 then
   cat >> $SKIP_TEST_LST << EOF

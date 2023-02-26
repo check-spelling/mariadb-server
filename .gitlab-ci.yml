@@ -1,5 +1,5 @@
 ---
-# This Gitlab-CI pipeline offers basic validation that a commit did not
+# This GitLab-CI pipeline offers basic validation that a commit did not
 # introduce easily detectable regressions. Builds run primairly on a new Fedora,
 # which has all the latest upstream build dependencies and thus is the primary
 # testing target, as eventually everything in Fedora becomes the next CentOS and
@@ -13,14 +13,14 @@
 # for inspiration on more integration tests to run.
 #
 # Also make sure the pipeline stays within the bounds of what CI workers on
-# Gitlab-CI are capable of executing, thus ensuring that any potential
-# contributor can at any point in time fork to their own Gitlab account and
+# GitLab-CI are capable of executing, thus ensuring that any potential
+# contributor can at any point in time fork to their own GitLab account and
 # start working towards meaningful contributions!
 #
-# NOTE TO MERGERS: Most of the contents in the Gitlab-CI configuration has been
+# NOTE TO MERGERS: Most of the contents in the GitLab-CI configuration has been
 # tailored for a specific release or MariaDB. As a general rule, do not merge
 # changes in this file across MariaDB branches to avoid breaking the CI. Updates
-# the Gitlab-CI pipeline are most of the time better done manually per major
+# the GitLab-CI pipeline are most of the time better done manually per major
 # release branch.
 
 stages:
@@ -46,14 +46,14 @@ variables:
   # NOTE! Currently ccache is only used on the Centos8 build. As each job has
   # sufficiently different environments they are unable to benefit from each
   # other's ccaches. As each build generates about 1 GB of ccache, having
-  # multiple caches would quickly consume all free storage on Gitlab-CI and
+  # multiple caches would quickly consume all free storage on GitLab-CI and
   # grind all builds to a halt. Also the network overhead of download/upload
-  # decreases the benefit of ccache in Gitlab-CI, and current cache:when and
+  # decreases the benefit of ccache in GitLab-CI, and current cache:when and
   # cache:policy are not flexible enough to have a system where the cache is
   # uploaded only once a week and not on every build. Having ccache on at least
   # one build still helps ensure that ccache compatibility is at least tested
   # and if the Centos 8 build is always significantly faster than all other
-  # builds (e.g. on self-hosted Gitlab instances) then users would at least be
+  # builds (e.g. on self-hosted GitLab instances) then users would at least be
   # able to discover it.
   #
   # Most steps don't need the source code, only artifacts
@@ -91,7 +91,7 @@ fedora:
     - cmake -DRPM=$CI_JOB_NAME $CMAKE_FLAGS .. 2>&1 | tee -a ../build-$CI_JOB_NAME-$CI_COMMIT_REF_SLUG.log
     - cmake --graphviz=../dependencies.dot .. && dot -Tpng -o ../dependencies.png ../dependencies.dot
     - eatmydata make package -j 2 2>&1 | tee -a ../build-$CI_JOB_NAME-$CI_COMMIT_REF_SLUG.log
-    # @TODO: Don't use -j without the limit of 2 on Gitlab.com as builds just
+    # @TODO: Don't use -j without the limit of 2 on GitLab.com as builds just
     # get stuck when running multi-proc and out of memory, see https://jira.mariadb.org/browse/MDEV-25968
     - make test
     # - make test-force  # mysql-test-runner takes too long, run MTR in a separate job instead
@@ -122,7 +122,7 @@ fedora-ninja:
     - cmake -DRPM=generic $CMAKE_FLAGS -DCMAKE_BUILD_WITH_INSTALL_RPATH=ON -G Ninja .. 2>&1 | tee -a ../build-$CI_JOB_NAME-$CI_COMMIT_REF_SLUG.log
     - ninja -t graph > ../dependencies.dot && dot -Tpng -o ../dependencies.png ../dependencies.dot
     - eatmydata ninja package -j 2 --verbose 2>&1 | tee -a ../build-$CI_JOB_NAME-$CI_COMMIT_REF_SLUG.log
-    # @TODO: Unlike other builds, the Ninja builds using Gitlab.com runners don't get stuck, but they do get
+    # @TODO: Unlike other builds, the Ninja builds using GitLab.com runners don't get stuck, but they do get
     # stuck on runners with more processors, see https://jira.mariadb.org/browse/MDEV-25968.
     # Thus, use the same limitation on Ninja builds as well to ensure it never gets stuck due to this bug.
     - ninja test
@@ -159,7 +159,7 @@ fedora-clang:
     - cmake -DRPM=generic $CMAKE_FLAGS .. 2>&1 | tee -a ../build-$CI_JOB_NAME-$CI_COMMIT_REF_SLUG.log
     - cmake --graphviz=../dependencies.dot .. && dot -Tpng -o ../dependencies.png ../dependencies.dot
     - eatmydata make package -j 2 2>&1 | tee -a ../build-$CI_JOB_NAME-$CI_COMMIT_REF_SLUG.log
-    # @TODO: Don't use -j without the limit of 2 on Gitlab.com as builds just
+    # @TODO: Don't use -j without the limit of 2 on GitLab.com as builds just
     # get stuck when running multi-proc and out of memory, see https://jira.mariadb.org/browse/MDEV-25968
     - make test
     # - make test-force  # mysql-test-runner takes too long, run MTr in a separate job instead
@@ -235,7 +235,7 @@ centos8:
     - mkdir builddir; cd builddir
     - cmake -DRPM=$CI_JOB_NAME $CMAKE_FLAGS .. 2>&1 | tee -a ../build-$CI_JOB_NAME-$CI_COMMIT_REF_SLUG.log
     - eatmydata make package -j 2 2>&1 | tee -a ../build-$CI_JOB_NAME-$CI_COMMIT_REF_SLUG.log
-    # @TODO: Don't use -j without the limit of 2 on Gitlab.com as builds just
+    # @TODO: Don't use -j without the limit of 2 on GitLab.com as builds just
     # get stuck when running multi-proc and out of memory, see https://jira.mariadb.org/browse/MDEV-25968
     - make test
     # - make test-force  # mysql-test-runner takes too long, run it MTR a separate job instead
@@ -268,7 +268,7 @@ centos7:
     - mkdir builddir; cd builddir
     - cmake -DRPM=$CI_JOB_NAME $CMAKE_FLAGS .. 2>&1 | tee -a ../build-$CI_JOB_NAME-$CI_COMMIT_REF_SLUG.log
     - make package -j 2 2>&1 | tee -a ../build-$CI_JOB_NAME-$CI_COMMIT_REF_SLUG.log
-    # @TODO: Don't use -j without the limit of 2 on Gitlab.com as builds just
+    # @TODO: Don't use -j without the limit of 2 on GitLab.com as builds just
     # get stuck when running multi-proc and out of memory, see https://jira.mariadb.org/browse/MDEV-25968
     - make test
     # - make test-force  # mysql-test-runner takes too long, run it in a separate job instead
@@ -394,7 +394,7 @@ rpmlint:
   script:
     - yum install -y rpmlint
     - rm -f rpm/*debuginfo*  # Not relevant in this test
-    # Limit output to 1000 lines as Gitlab-CI max output is 4194304 bytes
+    # Limit output to 1000 lines as GitLab-CI max output is 4194304 bytes
     # Save everything in a log file so it can be viewed in full via artifacts
     - rpmlint --info rpm/*.rpm | tee -a rpmlint-$CI_JOB_NAME-$CI_COMMIT_REF_SLUG.log
   artifacts:
@@ -515,7 +515,7 @@ mini-benchmark:
         - metrics.txt
 
 # Once all RPM builds and tests have passed, also run the DEB builds and tests
-# @NOTE: This is likely to work well only on salsa.debian.org as the Gitlab.com
+# @NOTE: This is likely to work well only on salsa.debian.org as the GitLab.com
 # runners are too small for everything this stage does.
 # build_deb:
 #   stage: Salsa-CI

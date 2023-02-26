@@ -166,7 +166,7 @@ done
 
 sysbench oltp_read_write cleanup --tables=20 | tee sysbench-cleanup.log
 
-# Store results from 4 thread run in a Gitlab-CI compatible metrics file
+# Store results from 4 thread run in a GitLab-CI compatible metrics file
 grep -oE '[a-z]+:[ ]+[0-9.]+' sysbench-run-4.log | sed -r 's/\s+/ /g' | tail -n 15 > metrics.txt
 
 echo # Newline improves readability

@@ -21,14 +21,14 @@ source ./VERSION
 # General CI optimizations to keep build output smaller
 if [[ $GITLAB_CI ]]
 then
-  # On Gitlab the output log must stay under 4MB so make the
+  # On GitLab the output log must stay under 4MB so make the
   # build less verbose
   sed '/Add support for verbose builds/,/^$/d' -i debian/rules
 elif [ -d storage/columnstore/columnstore/debian ]
 then
   # ColumnStore is explicitly disabled in the native Debian build. Enable it
   # now when build is triggered by autobake-deb.sh (MariaDB.org) and when the
-  # build is not running on Gitlab-CI.
+  # build is not running on GitLab-CI.
   sed '/-DPLUGIN_COLUMNSTORE=NO/d' -i debian/rules
   # Take the files and part of control from MCS directory
   if [ ! -f debian/mariadb-plugin-columnstore.install ]
@@ -193,7 +193,7 @@ fakeroot $BUILDPACKAGE_PREPEND dpkg-buildpackage -us -uc -I $BUILDPACKAGE_FLAGS
 # If the step above fails due to missing dependencies, you can manually run
 #   sudo mk-build-deps debian/control -r -i
 
-# Don't log package contents on Gitlab-CI to save time and log size
+# Don't log package contents on GitLab-CI to save time and log size
 if [[ ! $GITLAB_CI ]]
 then
   echo "List package contents ..."
