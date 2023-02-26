@@ -3641,7 +3641,7 @@ my_bool translog_init_with_table(const char *directory,
   log_descriptor.flush_no= 0;
   log_descriptor.next_pass_max_lsn= LSN_IMPOSSIBLE;
 
-  /* Normally in Aria this this calls translog_table_init() */
+  /* Normally in Aria this calls translog_table_init() */
   (*init_table_func)();
   compile_time_assert(sizeof(log_descriptor.dirty_buffer_mask) * 8 >=
                       TRANSLOG_BUFFERS_NO);

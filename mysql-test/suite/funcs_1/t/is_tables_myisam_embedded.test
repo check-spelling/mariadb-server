@@ -7,7 +7,7 @@
 #    that the privilege system works (affects some result sets).
 #
 # Author:
-# 2008-06-06 mleich Create this this variant for the embedded server.
+# 2008-06-06 mleich Create this variant for the embedded server.
 #
 
 if (`SELECT VERSION() NOT LIKE '%embedded%'`)
