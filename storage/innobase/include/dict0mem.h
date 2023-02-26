@@ -928,7 +928,7 @@ extern ulong	zip_failure_threshold_pct;
 compression failures */
 extern ulong	zip_pad_max;
 
-/** Data structure to hold information about about how much space in
+/** Data structure to hold information about how much space in
 an uncompressed page should be left as padding to avoid compression
 failures. This estimate is based on a self-adapting heuristic. */
 struct zip_pad_info_t {
