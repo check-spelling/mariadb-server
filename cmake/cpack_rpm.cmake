@@ -322,7 +322,7 @@ ENDIF()
 
 SET(PYTHON_SHEBANG "/usr/bin/python3" CACHE STRING "python shebang")
 
-# If we want to build build MariaDB-shared-compat,
+# If we want to build MariaDB-shared-compat,
 # extract compat libraries from MariaDB-shared-5.3 rpm
 FILE(GLOB compat53 RELATIVE ${CMAKE_SOURCE_DIR}
     "${CMAKE_SOURCE_DIR}/../MariaDB-shared-5.3.*.rpm")
