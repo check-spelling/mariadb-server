@@ -4886,7 +4886,7 @@ int do_save_master_pos()
   DESCRIPTION
   let $<var_name>=<var_val><delimiter>
 
-  <var_name>  - is the string string found between the $ and =
+  <var_name>  - is the string found between the $ and =
   <var_val>   - is the content between the = and <delimiter>, it may span
   multiple line and contain any characters except <delimiter>
   <delimiter> - is a string containing of one or more chars, default is ;
