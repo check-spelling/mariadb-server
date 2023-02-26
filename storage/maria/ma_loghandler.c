@@ -7973,7 +7973,7 @@ void check_skipped_lsn(MARIA_HA *info, LSN lsn, my_bool index_file,
 
   @param lsn             address up to which all LSNs should be flushed,
                          can be reset to real last LSN address
-  @parem sent_to_disk    returns 'sent to disk' position
+  @param sent_to_disk    returns 'sent to disk' position
   @param flush_horizon   returns horizon of the flush
 
   @note About terminology see comment to translog_flush().

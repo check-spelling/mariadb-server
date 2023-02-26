@@ -467,7 +467,7 @@ void free_sysvar_table_options(handlerton *hton)
 
   @param thd             thread handler
   @param file            handler of the table
-  @parem share           descriptor of the table
+  @param share           descriptor of the table
 
   @retval TRUE  Error
   @retval FALSE OK
@@ -506,7 +506,7 @@ bool parse_engine_table_options(THD *thd, handlerton *ht, TABLE_SHARE *share)
   Parses engine-defined partition options
 
   @param [in] thd   thread handler
-  @parem [in] table table with part_info
+  @param [in] table table with part_info
 
   @retval TRUE  Error
   @retval FALSE OK

@@ -2404,8 +2404,8 @@ static void info_change_lock(PAGECACHE_BLOCK_LINK *block, my_bool wl)
 /**
   @brief waiting for lock for read and write lock
 
-  @parem pagecache       pointer to a page cache data structure
-  @parem block           the block to work with
+  @param pagecache       pointer to a page cache data structure
+  @param block           the block to work with
   @param file            file of the block when it was locked
   @param pageno          page number of the block when it was locked
   @param lock_type       MY_PTHREAD_LOCK_READ or MY_PTHREAD_LOCK_WRITE
@@ -2456,8 +2456,8 @@ static my_bool pagecache_wait_lock(PAGECACHE *pagecache,
 /**
   @brief Put on the block write lock
 
-  @parem pagecache       pointer to a page cache data structure
-  @parem block           the block to work with
+  @param pagecache       pointer to a page cache data structure
+  @param block           the block to work with
 
   @note We have loose scheme for locking by the same thread:
     * Downgrade to read lock if no other locks are taken
