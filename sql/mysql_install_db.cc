@@ -700,7 +700,7 @@ static void set_permissions(const char *datadir, const char *service_user)
 {
   /*
     Set data directory permissions for both current user and
-    the one who who runs services.
+    the one who runs services.
   */
   set_directory_permissions(datadir, NULL,
                             FILE_GENERIC_READ | FILE_GENERIC_WRITE);
