@@ -4248,7 +4248,7 @@ handler *mysql_create_frm_image(THD *thd, const LEX_CSTRING &db,
   /*
     Unless table's storage engine supports partitioning natively
     don't allow foreign keys on partitioned tables (they won't
-    work work even with InnoDB beneath of partitioning engine).
+    work even with InnoDB beneath of partitioning engine).
     If storage engine handles partitioning natively (like NDB)
     foreign keys support is possible, so we let the engine decide.
   */
