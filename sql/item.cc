@@ -3951,7 +3951,7 @@ void Item_string::print(String *str, enum_query_type query_type)
         - utf8mb3 does not work well with non-BMP characters (e.g. emoji).
         - Simply changing utf8mb3 to utf8mb4 will not fully help:
           some character sets have unassigned characters,
-          they get lost during during cs->utf8mb4->cs round trip.
+          they get lost during cs->utf8mb4->cs round trip.
       */
       str_value.print_with_conversion(str, str->charset());
     }
