@@ -156,7 +156,7 @@ public:
 		/** trx_t::no of the committed transaction */
 		trx_id_t	trx_no;
 		/** The record number within the committed transaction's undo
-		log, increasing, purged from from 0 onwards */
+		log, increasing, purged from 0 onwards */
 		undo_no_t	undo_no;
 	};
 

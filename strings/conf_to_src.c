@@ -189,7 +189,7 @@ static CHARSET_INFO *find_charset_data_inheritance_source(CHARSET_INFO *cs)
 /**
   Detect if "cs" needs further loading from csname.xml
   @param   cs    - the character set pointer
-  @retval  FALSE - if the current data (e.g. loaded from from Index.xml)
+  @retval  FALSE - if the current data (e.g. loaded from Index.xml)
                    is not enough to dump the character set and requires
                    further reading from the csname.xml file.
   @retval  TRUE  - if the current data is enough to dump,

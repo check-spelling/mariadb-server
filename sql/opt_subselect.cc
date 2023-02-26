@@ -3761,7 +3761,7 @@ void JOIN::dbug_verify_sj_inner_tables(uint prefix_size) const
 #endif
 
 /*
-  Remove the last join tab from from join->cur_sj_inner_tables bitmap
+  Remove the last join tab from join->cur_sj_inner_tables bitmap
 
   @note
   remaining_tables contains @tab.

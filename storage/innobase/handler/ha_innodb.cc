@@ -14041,7 +14041,7 @@ ha_innobase::rename_table(
 				error = DB_SUCCESS;
 				/* We may skip renaming statistics if
 				we cannot lock the tables, when the
-				table is being renamed from from a
+				table is being renamed from a
 				temporary name. */
 				dict_table_close(table_stats, false, thd,
 						 mdl_table);

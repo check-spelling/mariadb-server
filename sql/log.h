@@ -1211,7 +1211,7 @@ inline bool normalize_binlog_name(char *to, const char *from, bool is_relay_log)
   if (opt_name && opt_name[0] && from && !test_if_hard_path(from))
   {
     // take the path from opt_name
-    // take the filename from from 
+    // take the filename from 
     char log_dirpart[FN_REFLEN], log_dirname[FN_REFLEN];
     size_t log_dirpart_len, log_dirname_len;
     dirname_part(log_dirpart, opt_name, &log_dirpart_len);
