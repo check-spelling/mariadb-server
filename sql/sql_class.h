@@ -149,7 +149,7 @@ enum enum_binlog_row_image {
 };
 
 
-/* Bits for different SQL modes modes (including ANSI mode) */
+/* Bits for different SQL modes (including ANSI mode) */
 #define MODE_REAL_AS_FLOAT              (1ULL << 0)
 #define MODE_PIPES_AS_CONCAT            (1ULL << 1)
 #define MODE_ANSI_QUOTES                (1ULL << 2)
