@@ -9691,7 +9691,7 @@ static void init_signal_handling(void)
   _CrtSetReportMode(_CRT_ASSERT, _CRTDBG_MODE_FILE);
   _CrtSetReportFile(_CRT_ASSERT, _CRTDBG_FILE_STDERR);
 
-  /* Do not not display the a error message box. */
+  /* Do not display the a error message box. */
   mode= SetErrorMode(0) | SEM_FAILCRITICALERRORS | SEM_NOOPENFILEERRORBOX;
   SetErrorMode(mode);
 

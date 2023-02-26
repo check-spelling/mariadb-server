@@ -151,7 +151,7 @@ DROP TABLE t1;
 # TOI tansactions while @@session.wsrep_on = OFF
 # and then same @@global.wsrep_on = OFF.
 # Notice, the combination @@global.wsrep_on = OFF
-# and @@session.wsrep_on = ON is not not possible,
+# and @@session.wsrep_on = ON is not possible,
 # (as tested above in this test case)
 #
 

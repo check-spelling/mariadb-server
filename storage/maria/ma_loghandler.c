@@ -4551,7 +4551,7 @@ static my_bool translog_write_parts_on_page(TRANSLOG_ADDRESS *horizon,
   if (!cursor->chaser)
     cursor->buffer->size+= length;
   /*
-    We do not not updating parts->total_record_length here because it is
+    We do not updating parts->total_record_length here because it is
     need only before writing record to have total length
   */
   DBUG_PRINT("info", ("Write parts buffer #%u: %p  "

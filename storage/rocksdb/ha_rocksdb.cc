@@ -12811,7 +12811,7 @@ int ha_rocksdb::inplace_populate_sk(
     finalize_bulk_load) on the handler where PK bulk load is done. However, if
     the thread ids of the bulk load thread and the alter thread differ by a
     multiple of table_cache_instances (8 by default), then they hash to the
-    same bucket in Table_cache_manager and the alter thread will not not call
+    same bucket in Table_cache_manager and the alter thread will not call
     the destructor on the handler it is holding. Thus, its m_sst_info will not
     be nullptr.
 

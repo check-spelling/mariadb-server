@@ -1409,7 +1409,7 @@ bool Item_in_optimizer::fix_fields(THD *thd, Item **ref)
     - subqueries that were originally EXISTS subqueries (and were coinverted by
       the EXISTS->IN rewrite)
 
-   When Item_in_optimizer is not not working as a pass-through, it
+   When Item_in_optimizer is not working as a pass-through, it
     - caches its "left argument", args[0].
     - makes adjustments to subquery item's return value for proper NULL
       value handling

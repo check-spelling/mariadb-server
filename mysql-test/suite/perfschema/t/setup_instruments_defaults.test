@@ -52,7 +52,7 @@ AND enabled = 'NO';
 
 
 --echo #
---echo # Verify that the instrument startup settings are not not visible.
+--echo # Verify that the instrument startup settings are not visible.
 --echo #
 SHOW VARIABLES LIKE "%/wait/synch/mutex%";
 

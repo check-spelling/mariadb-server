@@ -126,7 +126,7 @@ MACRO(CONFIGURE_FILE_CONTENT content file)
 ENDMACRO()
 
 # Merge static libraries into a big static lib. The resulting library 
-# should not not have dependencies on other static libraries.
+# should not have dependencies on other static libraries.
 # We use it in MariaDB to merge mysys,dbug,vio etc into the embedded server
 # mariadbd.
 
