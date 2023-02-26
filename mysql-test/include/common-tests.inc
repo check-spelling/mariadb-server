@@ -14,7 +14,7 @@ drop table if exists t1,t2,t3,t4;
 --enable_warnings
 
 # We have to use Aria instead of MyISAM as MyISAM has a very high row
-# access cost which causes some tests to use use join_cache instead of eq_ref
+# access cost which causes some tests to use join_cache instead of eq_ref
 
 set @@default_storage_engine="aria";
 
