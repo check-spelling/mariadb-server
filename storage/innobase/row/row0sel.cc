@@ -6621,7 +6621,7 @@ rec_loop:
             not count the secondary index record; CHECK TABLE ... EXTENDED
             will flag such orphan records if appropriate.
 
-            A secondary index record may may be "temporarily orphan"
+            A secondary index record may be "temporarily orphan"
             if purge is in progress. We will only flag them if
             everything up to PAGE_MAX_TRX_ID has been fully purged.
 
